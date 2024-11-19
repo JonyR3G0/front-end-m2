@@ -1,3 +1,17 @@
+
+h1{
+    container-type: block;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 20%;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
 p{
-    color:blueviolet
+    background-color: white;
+    color: black;
+    align-items: center;
+    padding: 20%;
 }
