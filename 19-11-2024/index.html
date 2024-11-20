@@ -8,18 +8,19 @@
   </head>
   <body>
     <header>
-      <h1>Curso CSS</h1>
+      <h1 id="titleiwi">Curso CSS</h1>
       <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#info">Info</a></li>
-          <li><a href="#contact">contacto</a></li>
+        <!-- Al agregar clases, hay que ser descriptivos como buena practica -->
+        <ul class="menu" >
+          <li><a class="enlace" href="#inicio">Inicio</a></li>
+          <li><a class="enlace" href="#info">Info</a></li>
+          <li><a class="enlace" href="#contact">contacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="inicio">
-        <h2>Intro</h2>
+        <h2 class="sub">Intro</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur
           molestiae, minus mollitia tempore ut voluptate aliquid. Dolore
@@ -43,8 +44,11 @@
         </ul>
       </section>
       <section id="contact">
-        <h2>Contactanos</h2>
-        <button>Info</button>
+        <h2 class="sub">Contactanos</h2>
+        <div class="papa">
+            <button class="botontacto">CLICK ME</button>
+        </div>
+
       </section>
     </main>
     <footer>

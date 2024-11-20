@@ -1,5 +1,5 @@
 /* Es mejor ir aplicando estilos de lo mas general a lo mas especifico */
-
+/* Selectores grandes usamos etiqueta, cosas especificas usamos selectores de clase */
 body {
   /* Es para poder seleccionar una fuente especifica, en caso de uqe el navegador no sea compatible con la primera, seguira con la segunda etc... con ese orden gerargico */
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -18,5 +18,56 @@ header{
 footer{
     background-color: rgb(36, 29, 29);
     color: aliceblue;
+    text-align: center;
+}
+
+.menu{
+    /* Usar seelectores de clase, sirve para poder ser mas especificos y poder reutilizar? */
+    list-style: none;
+    /* Sirve para quitar los estilos de lista aka los puntitos */
+}
+
+.enlace{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.enlace:hover{
+    /* Hace sentido que se llame pseudo clase o algo asi, es que es por fuera y con los dos puntitos */
+    color: brown;
+    text-decoration: underline;
+}
+
+.sub{
+    font-size: 30px;
+}
+
+.botontacto{
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+    font-size: 100px;
+    border: none;
+
+}
+
+.botontacto:hover{
+    font-size: 105px;
+    background-color: rgb(17, 0, 255);
+}
+
+.botontacto:active{
+    background-color: rgb(255, 0, 221);
+    color: rgb(0, 255, 242);
+    font-size: 200px;
+}
+
+/* Las clases en ID son iiiiiirrrreeeepetibles por buena practica */
+
+#titleiwi{
+    text-decoration: underline;
+}
+
+.papa{
     text-align: center;
 }
