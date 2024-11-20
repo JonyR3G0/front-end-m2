@@ -14,3 +14,8 @@ Estandares de colores:
 Hexa
 RGBA
 Nombre de CSS
+
+la etiqueta     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+es para probar diferentes opciones de fuentes en caso de que el navegador no sea compatible, se va en orden: primero arial, despues helvetica... etc.
+
