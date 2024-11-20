@@ -30,7 +30,7 @@
 
 | # de clase | Tema |
 | ---------- | :--: |
-| Clase #0   |  -   |
+| Clase #0   | Introduccion a CSS:Historia, introducción, ejemplos de codigo |
 
 ## 🔍 Retos y soluciones
 
