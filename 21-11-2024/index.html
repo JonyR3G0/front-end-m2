@@ -1,24 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Box model y displau</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Box model y display</title>
+  </head>
+  <body>
     <header>
-        <h1>Misión: Box model y display</h1>
-        <p>En esta paginase muestra como funciona el box model, display y box-sizing</p>
+        <img class="pepe"
+          src="./assets/think-outside-of-the-box.gif"
+          alt="logo caja gif"
+          width="40px"
+        />
+
+      <h1>Misión: Box model y display</h1>
     </header>
     <main>
-        <!-- Secciones -->
-         <section>
-            <h2>Display: Block</h2>
-         </section>
+      <!-- Secciones -->
+      <section>
+        <h2>Display: Block</h2>
+        <p>
+          Los elementos con display:block ocupan todo el ancho y comienzan en
+          una nueva linea
+        </p>
+        <div class="box">
+          <p>
+            Hi there! Soy un elemento Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Corporis ab eum asperiores voluptatibus quo
+            perferendis laborum provident magni sint, dolorem veritatis deserunt
+            cumque. Et distinctio, saepe explicabo eligendi quibusdam
+            voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Enim quia expedita possimus delectus deleniti saepe, repellendus
+            iure minima excepturi dicta dolorum quo blanditiis omnis dolore
+            beatae officiis, aut repudiandae recusandae Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Molestias, consequatur debitis
+            eaque totam iste natus ex impedit! Quasi cupiditate doloremque
+            dignissimos ex corrupti nobis odio consequatur labore maxime. Vel,
+            molestiae!
+          </p>
+        </div>
+        <div class="box block"><p>Hola! soy otro elemento</p></div>
+        <div class="box"><p>おはようございます！私は エレメントです</p></div>
+      </section>
+
+      <section>
+        <h2>In line</h2>
+        <span class="box">
+          Hola pirinola, soy inline y no lo sabia, soy span
+        </span>
+        <span class="box inline">
+          Hola pirinola, soy inline y no lo sabia, soy span
+        </span>
+      </section>
+
+      <section>
+        <h2>In line-block</h2>
+        <p>
+          Los inline-block son una combinacion de los moismo (aceptan los dos
+          tipos)
+        </p>
+        <span class="box inline-block">
+          Hola pirinola, soy inline y no lo sabia, soy span
+        </span>
+        <span class="box inline-block">
+          Hola pirinola, soy inline y no lo sabia, soy span
+        </span>
+      </section>
+
+      <section>
+        <h2>Box model en accion</h2>
+        <p>
+          El box model afecta como se comportarn los espacios y diseños
+          dependiendo de cada tipo de display
+        </p>
+        <h3>Display box</h3>
+        <div class="box block model">Bloque 1</div>
+
+        <div class="box block model">bloque 2</div>
+
+        <div class="box block">bloque 3</div>
+      </section>
     </main>
-    <footer>
-        &copy; 2024 Jonathan Reyes | Todos los derechos reservados.
-    </footer>
-</body>
+    <footer>&copy; 2024 Jonathan Reyes | Todos los derechos reservados.</footer>
+  </body>
 </html>
