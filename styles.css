@@ -1,17 +1,75 @@
+/* Reconstruí todo lo que habia aqui para que tenga mas sentido con los materiales que hemos estado aprendiendo con la Sensei */
 
-h1{
-    container-type: block;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    align-items: center;
-    padding: 20%;
+:root {
+  /* Declaramos los colores en variable para poder mantener la pagina de manera practica */
+  --primary-c: #00a6f0;
+  --secondary-c: #020507;
+  --background-c: #151b23;
+  --text-c: #ececec;
+  --accent-c: #00f0ff;
 }
-body{
-    background-color: rgb(0, 0, 0);
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-c);
+  color: var(--text-c);
 }
-p{
-    background-color: white;
-    color: black;
-    align-items: center;
-    padding: 20%;
+
+header {
+  /* En esta ocasion use un tipo de google fonts personalizada para que quedara mas estetico */
+  font-family: "Righteous", sans-serif;
+  /* Para que funcione hay que linkear la fuente en el html, aunque no se si lo estoy haciendo de manera correcta, pero funciona */
+  background-color: var(--secondary-c);
+  box-shadow: 0px 0.5px 0px rgb(78, 78, 78); /* Sombra suave */
+  color: var(--text-c);
+  padding: 6px;
+  font-size: small;
+}
+
+h1 {
+  display: inline-block;
+
+  /* Para darle un poco de margen y no quede pegado a la esquina */
+  padding-left: 20px;
+}
+
+article {
+  text-align: center;
+  display: block;
+  background-color: var(--secondary-c);
+  border-radius: 10px;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  margin: 100px;
+  /* Una sutil transicion que hace mas grande el article en la que estamos hover */
+  transition: transform 0.3s ease;
+}
+
+a {
+  display: block;
+  color: var(--text-c);
+  background-color: var(--background-c);
+  text-decoration: none;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  /* Una transicion anidada para hacer un poco mas grande y transicion de color de las fuentes en el boton */
+  transition: transform 0.3s ease, background-color 0.1s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.01);
+  background-color: var(--secondary-c);
+  border: 1px, solid, #151b23;
+}
+a:active {
+  background-color: var(--text-c);
+  color: var(--secondary-c);
+}
+article:hover {
+  transform: scale(1.009);
 }

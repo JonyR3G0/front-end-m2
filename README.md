@@ -28,13 +28,13 @@
 
 ## 🖥️ Lista de clases
 
-| # de clase | Tema |
-| ---------- | :--: |
+| # de clase |                             Tema                              |
+| ---------- | :-----------------------------------------------------------: |
 | Clase #0   | Introduccion a CSS:Historia, introducción, ejemplos de codigo |
+| Clase #1   |     Trabajando Box model, display, buenas practicas, etc.     |
 
 ## 🔍 Retos y soluciones
 
 - **Reto 0:** -
   **Solución:**
-  >-
-  > **NOTA:**-
+  > - **NOTA:**-
