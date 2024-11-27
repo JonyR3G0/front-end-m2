@@ -1,0 +1,85 @@
+/* Reset básico */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Declaramos los colores en variable para poder mantener la pagina de manera practica */
+  --primary-c: #00a6f0;
+  --secondary-c: #020507;
+  --background-c: #151b23;
+  --text-c: #ececec;
+  --accent-c: #00f0ff;
+}
+
+body {
+  /* Se puede aplicar el estilo a diferentes tipos de etiquetas a la vez usando una coma: a, b {estilo } */
+  margin: 0;
+  padding: 0;
+  /* Los 3 elementos inferiores se heredaran, a diferencia del magin y padding */
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 30px;
+  background-color: var(--background-c);
+  color: var(--text-c);
+}
+
+header,
+main,
+footer {
+  margin: 0px;
+  padding: 10px;
+}
+
+/* OJO el selector que ganaria en este caso sera el selector mas especifico, se le dara mayor prioridad */
+
+h1 {
+  text-align: center;
+  background-color: var(--accent-c);
+}
+
+header,
+h1 {
+  background-color: var(--secondary-c);
+}
+
+footer {
+  background-color: var(--secondary-c);
+  text-align: center;
+}
+.author {
+  color: var(--primary-c);
+}
+.lista-tareas {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+.lista-tareas li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tareas {
+  margin-right: 10px;
+  accent-color: var(--primary-c);
+  cursor: pointer;
+}
+
+footer a {
+  color: var(--primary-c);
+}
+
+.tareas:checked + .tarea-dsc {
+  text-decoration: line-through;
+  font-style: italic;
+  color: var(--primary-c);
+}
+
+.parrafo-norm{
+    font-size: 22px;
+    text-align: justify;
+}
