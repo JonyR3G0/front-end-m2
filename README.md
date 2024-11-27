@@ -10,9 +10,9 @@
 
 - [📖 Introducción](#-introducción)
 - [🧰 Estructura del Proyecto](#-estructura-del-proyecto)
-- [🖥️ Lista de clases](#-lista-de-clases)
-- [🗺️ Roadmap tareas y pendientes](#-tarea-roadmap)
-- [🚀 Workflow proyecto final](#-worflow-proyecto-final)
+- [🖥️ Lista de clases](#-clases)
+- [🗺️ Roadmap tareas y pendientes](#-roadmap-tareas-y-pendientes)
+- [🚀 Workflow proyecto final](#-workflow-proyecto-final)
 - [🔍 Retos y Soluciones](#-retos-y-soluciones)
 
 ## 📖 Introducción
@@ -28,7 +28,7 @@
 - `index.html` - Un index que redirige a todos las practicas que hemos estado llevando, para hostearlo en `pages`
 - `assets` - Carpeta donde estarán la media usada en los proyectos.
 
-## 🖥️ Lista de clases
+## Clases
 
 | # de clase |                                Tema                                |
 | ---------- | :----------------------------------------------------------------: |
