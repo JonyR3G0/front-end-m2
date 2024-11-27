@@ -8,6 +8,10 @@
   --text-c: #ececec;
   --accent-c: #00f0ff;
   --sad-accent: #226166;
+  --sad-accentp: #2f848b;
+
+  --bttn-accent:#238636;
+  --bttn-hover: #2ea043;
 }
 
 body {
@@ -49,7 +53,27 @@ article {
   height: auto;
   margin: 50px;
   /* Una sutil transicion que hace mas grande el article en la que estamos hover */
-  transition: background-color 0.5s ease-in-out;
+  transition: transform 0.3s ease, background-color 0.5s ease-in-out;
+}
+
+.info-bttn{
+
+  background-color: var(--bttn-accent);
+  transition: background-color 0.1s ease-in-out;
+
+}
+
+.info-bttn:hover{
+  background-color: var(--bttn-hover);
+}
+
+.project-bttn{
+  background-color: var(--sad-accent);
+  transition: background-color 0.1s ease-in-out;
+}
+
+.project-bttn:hover{
+  background-color: var(--sad-accentp);
 }
 
 a {
@@ -61,19 +85,18 @@ a {
   margin: 10px;
   border-radius: 10px;
   /* Una transicion anidada para hacer un poco mas grande y transicion de color de las fuentes en el boton */
-  transition: transform 0.3s ease, background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
 }
 
 a:hover {
-  transform: scale(1.01);
   background-color: var(--secondary-c);
-  border: 1px, solid, #151b23;
 }
 a:active {
   background-color: var(--text-c);
   color: var(--secondary-c);
 }
 article:hover {
+  transform: scale(1.01);
   background-color: var(--accent-background-c);
 }
 .sad-accent {
@@ -97,12 +120,12 @@ footer a {
   color: var(--accent-c);
 }
 
-nav{
+nav {
   padding: 10px;
   margin: auto;
 }
 
-footer p{
+footer p {
   margin: 0px;
 }
 

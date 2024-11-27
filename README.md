@@ -1,4 +1,4 @@
-# 🌟 Proyect: Front-End Journey part two 🌟
+# 🌟 Project: Front-End Journey part two 🌟
 
 <!--- Es una buena practica comentar, pero markdown es bastante "straight forward" no? -->
 
