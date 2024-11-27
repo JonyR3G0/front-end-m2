@@ -10,7 +10,7 @@
 
 - [📖 Introducción](#-introducción)
 - [🧰 Estructura del Proyecto](#-estructura-del-proyecto)
-- [🖥️ Lista de clases](#-clases)
+- [👩🏻‍🏫 Lista de clases](#-lista-de-clases)
 - [🗺️ Roadmap tareas y pendientes](#-roadmap-tareas-y-pendientes)
 - [🚀 Workflow proyecto final](#-workflow-proyecto-final)
 - [🔍 Retos y Soluciones](#-retos-y-soluciones)
@@ -28,7 +28,7 @@
 - `index.html` - Un index que redirige a todos las practicas que hemos estado llevando, para hostearlo en `pages`
 - `assets` - Carpeta donde estarán la media usada en los proyectos.
 
-## Clases
+## 👩🏻‍🏫 Lista de clases
 
 | # de clase |                                Tema                                |
 | ---------- | :----------------------------------------------------------------: |
@@ -63,6 +63,8 @@ graph TD;
 ## 🔍 Retos y soluciones
 
 - **Reto 0:**  Definitivamente, se me dificulta un poco internalizar y entender de manera abstracta como interactúan los modos de `display`, no es complicado, pero si entendiera de una manera profunda y abstracta estoy seguro de que sería mucho más rápido el desarrollo para evitar errores inesperados en el diseño.
-  **Solución:** Me voy a poner a estudiar padrino 🤠
+- **Solución:** Me voy a poner a estudiar padrino 🤠
+- **Reto 1:** El emoji "🖥️" bugea los links internos de markdown.
+- **Solución:** Solamente escogí otro.
 
   [¿Volver a inicio?](#-tabla-de-contenidos)
