@@ -21,7 +21,7 @@ body {
 
 header {
   /* En esta ocasion use un tipo de google fonts personalizada para que quedara mas estetico */
-  font-family: "Righteous", sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
   /* Para que funcione hay que linkear la fuente en el html, aunque no se si lo estoy haciendo de manera correcta, pero funciona */
   font-weight: 100;
   letter-spacing: 2px;
@@ -29,7 +29,7 @@ header {
   box-shadow: 0px 0.5px 0px rgb(78, 78, 78); /* Sombra suave */
   color: var(--text-c);
   padding: 6px;
-  font-size: small;
+  font-size: medium;
 }
 
 h1 {
@@ -58,7 +58,7 @@ a {
   background-color: var(--background-c);
   text-decoration: none;
   padding: 10px;
-  margin: auto;
+  margin: 10px;
   border-radius: 10px;
   /* Una transicion anidada para hacer un poco mas grande y transicion de color de las fuentes en el boton */
   transition: transform 0.3s ease, background-color 0.1s ease-in-out;
@@ -85,4 +85,27 @@ h2 {
   text-align: left;
   display: block;
   padding-left: 20px;
+}
+
+footer {
+  background-color: var(--secondary-c);
+  text-align: center;
+  padding: 30px;
+}
+
+footer a {
+  color: var(--accent-c);
+}
+
+nav{
+  padding: 10px;
+  margin: auto;
+}
+
+footer p{
+  margin: 0px;
+}
+
+.author {
+  color: var(--accent-c);
 }
