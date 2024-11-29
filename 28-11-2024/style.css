@@ -1,0 +1,153 @@
+/* Reconstruí todo lo que habia aqui para que tenga mas sentido con los materiales que hemos estado aprendiendo con la Sensei */
+
+:root {
+  /* Declaramos los colores en variable para poder mantener la pagina de manera practica */
+  /* Tema blk */
+  --dark-secondary-c: #020507;
+  --dark-background-c: #151b23;
+  --dark-text-c: #ececec;
+  --dark-accent-c: #00f0ff;
+  --dark-sad-accent: #226166;
+  --dark-bttn-accent: #238636;
+  /* tema claro */
+  --light-secondary-c: #ffffff;
+  --light-background-c: #c5c5c5;
+  --light-text-c: #000000;
+  --light-accent-c: #00f0ff;
+  --light-sad-accent: #226166;
+  --light-bttn-accent: #238636;
+}
+
+body.theme-drk {
+  --secondary-c: var(--dark-secondary-c);
+  --background-c: var(--dark-background-c);
+  --text-c: var(--dark-text-c);
+  --accent-c: var(--dark-accent-c);
+  --sad-accent: var(--dark-sad-accent);
+  --bttn-accent: var(--dark-bttn-accent);
+}
+
+body.theme-light {
+  --secondary-c: var(--light-secondary-c);
+  --background-c: var(--light-background-c);
+  --text-c: var(--light-text-c);
+  --accent-c: var(--light-accent-c);
+  --sad-accent: var(--light-sad-accent);
+  --bttn-accent: var(--light-bttn-accent);
+}
+
+/* Estilos generales */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-c);
+  color: var(--text-c);
+  line-height: 1.6;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--secondary-c);
+}
+
+.nav-link,
+.bttn-tema {
+  padding: 5px;
+  text-decoration: none;
+  color: var(--text-c);
+  font-weight: bolder;
+  cursor: pointer;
+  transition: color 0.5s;
+  border-radius: 5px;
+  background-color: var(--sad-accent);
+}
+
+.nav-link:hover,
+.bttn-tema:hover {
+  color: var(--accent-c);
+}
+
+footer {
+  background-color: var(--secondary-c);
+  text-align: center;
+  padding: 30px;
+}
+
+footer a {
+  color: var(--accent-c);
+}
+
+footer p {
+  margin: 0px;
+}
+
+/* Cards */
+
+.section-cards {
+  text-align: center;
+  padding: 10px;
+}
+.content-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 600px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--secondary-c);
+  padding: 20px;
+  border: 1px, solid, var(--bttn-accent);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px #2ea043;
+}
+
+.special {
+  /* por defecto es 0 */
+  flex-grow: 2;
+  /* Ocupa mas espacio proporcionalmente */
+}
+
+.animated:hover {
+  transform: rotate(180deg) scale(1.001);
+}
+
+.card:nth-child(1) {
+  align-self: flex-end;
+}
+
+/* Formulario */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: var(--bttn-accent);
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}

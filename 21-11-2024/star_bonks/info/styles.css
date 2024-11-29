@@ -138,3 +138,8 @@ footer p {
   border: 5px, solid, var(--bttn-hover);
   border-radius: 10px;
 }
+header a{
+  background-color: initial;
+  padding: 0px;
+  margin: 0px;
+}

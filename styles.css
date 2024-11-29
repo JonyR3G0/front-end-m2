@@ -76,6 +76,12 @@ article {
   background-color: var(--sad-accentp);
 }
 
+header a{
+  background-color: initial;
+  padding: 0px;
+  margin: 0px;
+}
+
 a {
   display: inline-block;
   color: var(--text-c);
@@ -120,13 +126,13 @@ footer a {
   color: var(--accent-c);
 }
 
+footer p {
+  margin: 0px;
+}
+
 nav {
   padding: 10px;
   margin: auto;
-}
-
-footer p {
-  margin: 0px;
 }
 
 .author {

@@ -35,6 +35,7 @@
 | Clase #0   |   Introduccion a CSS:Historia, introducción, ejemplos de codigo    |
 | Clase #1   |       Trabajando Box model, display, buenas practicas, etc.        |
 | Clase #2   | Conceptos de herencia, especificidad y el efecto de cascada de CSS |
+|Clase #3|FLEXBOX|
 
 ## 🗺️ Roadmap tareas y pendientes
 

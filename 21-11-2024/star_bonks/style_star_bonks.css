@@ -1,0 +1,25 @@
+:root {
+  /* Colores usados en la estructura general de la page */
+
+  --verde-star: #006241;
+  --sombra-header: #eaeaea;
+  --background-blanco-main: #ffffff;
+  --botones-negro: #000000;
+  --botones-accento-gris: #333333;
+
+  /* A continuacion colores de los articles: */
+  --article-verde: #1e3932;
+  --article-azul: #0044b4;
+  --article-light-azul: #98cde4;
+  --article-cherry: #d50032;
+  --article-light-cherry: #f6bfd9;
+
+  /* A continuacion los colores usados en fuentes */
+  --text-over-cherry: #db273c;
+  --text-over-light-azul: #003b49;
+
+  --text-articles-main: #ffffff;
+
+  --text-light-gray-footer: #999999;
+  --text-light-gray-accento-footer: #7c7c7c;
+}

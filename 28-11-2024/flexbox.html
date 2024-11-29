@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>THE FlexBox</title>
+  </head>
+  <body class="theme-drk">
+    <header>
+      <h1>Practice: Flex box</h1>
+      <!-- UNA CARACTERISTICA PRINCIPAL DE FLEXBOX ES PARA ORGANIZAR LOS NAV NOTE: PARA USAR EN EL PROYECTO FINAL -->
+      <nav>
+        <ul class="navbar">
+          <li><a class="nav-link" href="#">INICIO</a></li>
+          <li><a class="nav-link" href="#cards">TARJETAS</a></li>
+          <li><a class="nav-link" href="#form">FORM</a></li>
+          <li>
+            <button id="bttn-tema" aria-label="Cambiar de tema">🌕</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-cards">
+        <h2 id="tarjetas">Ejempo de cards con flexbox</h2>
+        <p>
+          intro de flexbox, a continuacion las diferentes propiedades y como
+          afecta
+        </p>
+        <div class="content-cards">
+          <article class="card">
+            <h3>Tarjeta 1</h3>
+
+            <p>
+              Esta tarjeta usa <code>align-self: flex-end</code> para moverse
+              hacia abajo
+            </p>
+          </article>
+          <article class="card special">
+            <h3>Tarjeta 2</h3>
+
+            <p>
+              Esta tarjeta usa <code>flex-grow: 2</code> para ocupar mas espacio
+              <strong>proporcionalmente</strong> (se usa lo menos posible)
+            </p>
+          </article>
+          <article class="card">
+            <h3>Tarjeta 3</h3>
+
+            <p>
+              Esta tarjeta usa <code>order -1 </code> es para forzar la posicion
+              por defecto dentro de flex (aparecer antes en el flujo visual)
+            </p>
+          </article>
+          <article class="card animated">
+            <h3>Tarjeta 4</h3>
+
+            <p>
+              Esta tarjeta usa <code>animacion</code> pasa sobre mi uwu picame
+              uwu y verás.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="form">Ejemplo de formulario con flexbox</h2>
+
+        <form>
+          <label for="nombre">Nombre</label>
+          <input type="text" />
+
+          <label for="correo">Correo</label>
+          <input type="email" />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea name="coments"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span class="author">Jonathan Reyes </span> 2024 | todos los
+        derechos reservados.
+      </p>
+      <nav>
+        <p>
+          <a href="#">Inicio</a>
+          |
+          <a href="https://github.com/JonyR3G0"
+            ><img
+              src="../assets/ico/github-mark-white.png"
+              alt="logo GitHub"
+              width="20"
+          /></a>
+        </p>
+      </nav>
+    </footer>
+    <!-- LA ETIQUETA DE SCRIPT SE QUEDA HASTA ABAJO DE BODY -->
+    <script src="script.js"></script>
+  </body>
+</html>
