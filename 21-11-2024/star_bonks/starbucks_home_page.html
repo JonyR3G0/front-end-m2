@@ -3,14 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="https://www.starbucks.com.mx/static/images/logo.svg" type="image/x-icon" />
+
+    <!-- Estas etiquetas meta vienen del sitio oficial (info para apps de meta y twitter) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@starbucksrealnews" />
+    <meta name="twitter:creator" content="@starbucksrealnews" />
+    <meta property="og:url" content="https://starbucks.com" />
+    <meta
+      property="og:image"
+      content="https://starbucks.com/static/images/default-image.png"
+    />
+    <meta property="og:image:alt" content="https://starbucks.com" />
+    <meta property="og:image:width" content="220" />
+    <meta property="og:image:height" content="220" />
+    <meta property="og:site_name" content="Starbucks - Starbucks." />
+    <meta property="og:title" content="Homepage" />
+    <meta property="og:description" content="Homepage" />
+    <meta property="og:type" content="website" />
+    <!-- Fin de las etiquetas metas prestadas -->
+
+    <!-- Inicio etiquetas meta insertadas por mi -->
+    <!-- SEO -->
+    <meta name="author" content="Jonathan Reyes" />
+    <meta
+      name="description"
+      content="Un proyecto de practica para clona el sitio de starbucks. !!! NO SOY DUEÑO INTELECTUAL DE LA MARCA U PRODUCTOS EN ESTA PAGINA !!! solamente del codigo."
+    />
+    <meta name="keywords" content="starbucks, practica, proyecto, dev.f" />
+
+    <!-- Link al vector original del logo de starbonks para icono de page -->
+    <link
+      rel="icon"
+      href="https://www.starbucks.com.mx/static/images/logo.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Linkeo de CSS -->
+    <link rel="stylesheet" href="style_star_bonks.css" />
+
     <title>Homepage | Starbonks</title>
   </head>
   <body>
     <header>
+      <!-- Link a la homepage -->
+      <a href="#"
+        ><img
+          src="https://www.starbucks.com.mx/static/images/logo.svg"
+          alt="logo starbucks"
+          width="50"
+          height="50"
+      /></a>
       <nav class="menu-left">
-        <!-- Link a la homepage -->
-        <a href="#"><img src="https://www.starbucks.com.mx/static/images/logo.svg" alt="logo starbucks" /></a>
         <!-- Link menu -->
         <a href="#">MENU</a>
         <!-- Link rewards -->
@@ -19,11 +62,67 @@
       <nav class="menu-right">
         <!-- Maps (localizar tienda) -->
         <a href="#">Localizar Tienda</a>
-        
+
         <!-- Estos son para autenticar al user -->
         <a class="user-in" href="#">Ingresar</a>
         <a class="user-new" href="#">Únete</a>
       </nav>
     </header>
+    <main>
+      <!-- DE MOMENTO SIN HABILITAR HASTA FLEXBOX -->
+      <!-- <article class="right-article">
+        <div class="">
+          <img
+            alt="STARBUCKS LATTE POR TI"
+            src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2F2024-10_SB_Latte.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max"
+            height="263"
+            />
+          <h2>STARBUCKS LATTE POR TI</h2>
+          <p>
+            Por nuestro amor al café, a nuestros partners y a nuestros clientes.
+          </p>
+          <p>¡Estamos felices de verte todos los días!</p>
+        </div>
+      </article> -->
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+    </main>
+    <footer class="pre-footer"></footer>
+    <footer class="main-footer">
+      <p>
+        <a
+          class="facebook-icon"
+          href="https://www.facebook.com/StarbucksMexico"
+          target="_blank"
+          rel="noreferrer"
+          >Facebook</a
+        >
+        <a
+          class="instagram-icon"
+          href="https://www.instagram.com/starbucksMex/"
+          target="_blank"
+          rel="noreferrer"
+          >Instagram</a
+        >
+        <a
+          class="twitter-icon"
+          href="https://twitter.com/StarbucksMex"
+          target="_blank"
+          rel="noreferrer"
+          >Twitter</a
+        >
+        <a
+          class="youtube-icon"
+          href="https://www.youtube.com/user/StarbucksMexico?app=desktop"
+          target="_blank"
+          rel="noreferrer"
+          >Youtube</a
+        >
+      </p>
+    </footer>
   </body>
 </html>

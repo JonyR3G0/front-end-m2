@@ -11,7 +11,8 @@
 - [📖 Introducción](#-introducción)
 - [🧰 Estructura del Proyecto](#-estructura-del-proyecto)
 - [👩🏻‍🏫 Lista de clases](#-lista-de-clases)
-- [🗺️ Roadmap tareas y pendientes](#-roadmap-tareas-y-pendientes)
+- [🗺️ Roadmap tareas y pendientes](#%EF%B8%8F-roadmap-tareas-y-pendientes)
+<!-- Hey!!!!!! bingo! supongo que es el codigo hex o algo asi pero,%EF%B8%8F es el emoji  -->
 - [🚀 Workflow proyecto final](#-workflow-proyecto-final)
 - [🔍 Retos y Soluciones](#-retos-y-soluciones)
 

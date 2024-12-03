@@ -23,3 +23,82 @@
   --text-light-gray-footer: #999999;
   --text-light-gray-accento-footer: #7c7c7c;
 }
+
+/* Selectores generales */
+
+* {
+  /* Selecciono el box model de border-box para manejar de una mejor manera los tamaños */
+  box-sizing: border-box;
+  /* Igual que la page original no tenemos ni margin ni pading casi en ninguna sección */
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: SoDo Sans, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  /* Se que se usan medidas em y tarde que temprano las vamos a usar asi que me adelanto */
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+header {
+  padding: 20px;
+  display: inline-block;
+  background-color: var(--background-blanco-main);
+  color: var(--botones-negro);
+}
+
+header nav {
+  display: inline-block;
+}
+
+header a {
+  font-weight: bolder;
+  color: var(--botones-negro);
+  text-decoration: none;
+}
+
+.menu-left a:hover {
+  color: var(--verde-star);
+  text-decoration: underline solid var(--verde-star) 5px;
+}
+
+.menu-right a {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.menu-right a:hover {
+  color: var(--botones-accento-gris);
+}
+
+/* .right-article{
+  color: var(--text-articles-main);
+  text-align: right;
+} */
+
+a {
+  text-decoration: none;
+}
+
+.social-networks a:hover {
+  color: var(--botones-accento-gris);
+}
+.menu-right .user-new:hover {
+  background-color: var(--botones-accento-gris);
+  color: var(--text-articles-main);
+}
+
+.user-in {
+  padding: 7px 16px;
+  border: 1px solid var(--botones-negro);
+  border-radius: 25px;
+}
+.user-new {
+  padding: 7px 16px;
+  background-color: var(--botones-negro);
+  color: var(--text-articles-main);
+  border: 1px solid var(--botones-negro);
+  border-radius: 25px;
+}
