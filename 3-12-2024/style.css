@@ -1,3 +1,7 @@
+
+/* DE LO GENERAL a lo particular */
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +10,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: antiquewhite;
+    background-color: rgb(215, 220, 250);
     color: #222;
     line-height: 1.5;
 }
@@ -64,7 +68,66 @@ header{
     border-radius: 20px;
 }
 
+.categorias{
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.lista-categorias{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.categorias-items{
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+}
+
+.categorias-items img{
+    border-radius: 50%;
+} 
+
+.productos{
+    padding: 20px;
+    margin: 10px 0;
+
+}
+
+.lista-carrusel{
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+}
+
+.producto-item{
+    scroll-snap-align: start;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+}
+
+.producto-item img{
+    border-radius: 20px;
+}
+
+.producto-titulo{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.producto-precio{
+    font-size: 14px;
+    color: blue;
+}
+
 footer{
+    background-color: white;
     text-align: center;
     padding: 20px;
 }
