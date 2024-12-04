@@ -43,11 +43,11 @@ h1 {
 
 header,
 h1 {
-  background-color: var(--dark-secondary-c);
+  background-color: var(--secondary-c);
 }
 
 footer {
-  background-color: var(--dark-secondary-c);
+  background-color: var(--secondary-c);
   text-align: center;
 }
 .author {

@@ -36,7 +36,7 @@
 | Clase #0   |   Introduccion a CSS:Historia, introducción, ejemplos de codigo    |
 | Clase #1   |       Trabajando Box model, display, buenas practicas, etc.        |
 | Clase #2   | Conceptos de herencia, especificidad y el efecto de cascada de CSS |
-|Clase #3|FLEXBOX|
+| Clase #3   |                              FLEXBOX                               |
 
 ## 🗺️ Roadmap tareas y pendientes
 
@@ -45,8 +45,9 @@
 | # de clase | Tarea                                                                                                                                      | Plan                                                                                                                                                                          | Status           |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | Clase #0   | Crear repo y subirlo: empezar a trabajar el proyecto                                                                                       | -                                                                                                                                                                             | Entregada        |
-| Clase #1   | Implementar el Box model, display y mantener las buenas pracicas al proyecto final, **entregar el ultimo commit**                          | Primero hacer el analisis de estructura de la pagina original y luego hacer el html, finalmente implementar el menu de navegacion y la paleta de colores, usando el box model | **SIN ENTREGAR** |
+| Clase #1   | Implementar el Box model, display y mantener las buenas pracicas al proyecto final, **entregar el ultimo commit**                          | Primero hacer el analisis de estructura de la pagina original y luego hacer el html, finalmente implementar el menu de navegacion y la paleta de colores, usando el box model | Entregada        |
 | Clase #2   | Implementar los conceptos de herencia y respetar el estilo del css para que sea limpio, puedo usar la clase `inherit` para heredar estilos | Integrar los elementos y limpiar el CSS                                                                                                                                       | **SIN ENTREGAR** |
+| Clase #3   | Implementar FLEXBOX en los articles de la main y comenzar a trabajar en el menu de productos                                               | -                                                                                                                                                                             | **SIN ENTREGAR** |
 
 ## 🚀 Workflow proyecto final
 
@@ -64,7 +65,7 @@ graph TD;
 
 ## 🔍 Retos y soluciones
 
-- **Reto 0:**  Definitivamente, se me dificulta un poco internalizar y entender de manera abstracta como interactúan los modos de `display`, no es complicado, pero si entendiera de una manera profunda y abstracta estoy seguro de que sería mucho más rápido el desarrollo para evitar errores inesperados en el diseño.
+- **Reto 0:** Definitivamente, se me dificulta un poco internalizar y entender de manera abstracta como interactúan los modos de `display`, no es complicado, pero si entendiera de una manera profunda y abstracta estoy seguro de que sería mucho más rápido el desarrollo para evitar errores inesperados en el diseño.
 - **Solución:** Me voy a poner a estudiar padrino 🤠
 - **Reto 1:** El emoji "🖥️" bugea los links internos de markdown.
 - **Solución:** Solamente escogí otro.
