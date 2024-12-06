@@ -1,0 +1,70 @@
+/* Estilos generales di lu giniralius au espicificae */
+
+:root{
+    --color-background: #fff;
+    --color-txt: #000;
+    --color-principal: #123;
+    --color-secundario: #456;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-background);
+    line-height: 1.5;
+    color: var(--color-txt);
+}
+
+header{
+    padding: 20px 0;
+    background-color: var(--color-principal);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Para evitar inconveniente nos vamos de 100 en 100 en las capas para tener margen para acomodar elemento */
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px, 20px;
+    align-items: center;
+}
+
+.logo{
+    font-size: 50px;
+    text-decoration: none;
+}
+.nav-menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: var(--color-background);
+    transition: color 0.1s ease-in-out;
+}
+
+.nav-menu li a:hover{
+    color: var(--color-secundario);
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--color-principal);
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
