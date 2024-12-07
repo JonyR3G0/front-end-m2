@@ -1,0 +1,123 @@
+:root {
+  /* Colores usados en la estructura general */
+
+  --verde-starbucks: #006241;
+  --gris-sombra: #eaeaea;
+  --background-blanco-main: #ffffff;
+  --botones-negro: #000000;
+  --accento-gris: #333333;
+
+  /* Articles: */
+  --article-verde: #1e3932;
+  --article-azul: #0044b4;
+  --article-light-azul: #98cde4;
+  --article-cherry: #d50032;
+  --article-light-cherry: #f6bfd9;
+
+  /* fuentes */
+  --text-over-cherry: #db273c;
+  --text-over-light-azul: #003b49;
+  --text-light-gray-footer: #999999;
+  --text-light-gray-accento-footer: #7c7c7c;
+  --text-articles-main: #ffffff;
+}
+
+/* Selectores generales - start - */
+
+* {
+  /* Selecciono el box model de border-box para manejar de una mejor manera los tamaños */
+  box-sizing: border-box;
+  /* Igual que la page original no tenemos ni margin ni pading casi en ninguna sección */
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: SoDo Sans, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+header {
+  padding: 20px;
+  display: inline-block;
+  background-color: var(--background-blanco-main);
+  color: var(--botones-negro);
+}
+
+/* Selectores generales - end - */
+/* Nav-bar -start- */
+
+header nav {
+  display: inline-block;
+}
+
+header a {
+  font-weight: bolder;
+  color: var(--botones-negro);
+  text-decoration: none;
+}
+
+.nav-bar-user-in {
+  padding: 7px 16px;
+  border: 1px solid var(--botones-negro);
+  border-radius: 25px;
+}
+
+.nav-bar-user-new {
+  padding: 7px 16px;
+  background-color: var(--botones-negro);
+  color: var(--text-articles-main);
+  border: 1px solid var(--botones-negro);
+  border-radius: 25px;
+}
+
+.nav-link-der a {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.nav-link-izq a:hover {
+  color: var(--verde-starbucks);
+  text-decoration: underline solid var(--verde-starbucks) 5px;
+}
+
+.nav-link-der a:hover {
+  color: var(--accento-gris);
+}
+
+.social-networks a:hover {
+  color: var(--accento-gris);
+}
+
+.nav-link-der .nav-bar-user-new:hover {
+  background-color: var(--accento-gris);
+  color: var(--text-articles-main);
+}
+
+/* Navbar - end - */
+/* Cards - start  */
+
+.cards{
+  color: var(--text-articles-main);
+  font-weight: bold;
+  font-stretch: ultra-expanded;
+}
+
+.card-green{
+  color: inherit;
+  font-weight: inherit;
+  font-stretch: inherit;
+  background-color: var(--article-verde);
+}
+
+.card-cherry{
+  background-color: var(--article-cherry);
+}
+
+.card-blue{
+ background-color: var(--article-azul);
+}
+
+/* Cards end */
