@@ -105,6 +105,20 @@ header a {
   font-stretch: ultra-expanded;
 }
 
+.card-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container-txt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
 .card-green{
   color: inherit;
   font-weight: inherit;
