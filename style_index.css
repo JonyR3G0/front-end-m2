@@ -1,0 +1,258 @@
+:root {
+  --secondary-c: #020507;
+  --background-c: #151b23;
+  --accent-background-c: #060f14;
+  --text-c: #ececec;
+  --accent-c: #00ffffff;
+  --sad-accent: #226166;
+  --sad-accentp: #2f848b;
+
+  --bttn-accent: #238636;
+  --bttn-hover: #2ea043;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: var(--background-c);
+  color: var(--text-c);
+}
+
+header {
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 100;
+  font-size: medium;
+  letter-spacing: 2px;
+  color: var(--text-c);
+  background-color: var(--secondary-c);
+  padding: 6px;
+  box-shadow: 0px 0.5px 0px rgb(78, 78, 78); /* Sombra suave */
+}
+
+/* Nav-bar =>Starts<= */
+
+.nav-bar {
+  display: flex;
+  height: 7vh;
+  justify-content: space-between;
+  padding: 1%;
+  align-items: center;
+  overflow: hidden;
+}
+
+.nav-bar-logo-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  padding: 0.3%;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-bar-logo {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  transition: filter 0.5s ease, rotate 0.4s ease-in-out;
+}
+
+.nav-bar-links-container {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.nav-bar-links-container a {
+  border-bottom: 2px solid var(--text-c);
+  padding-bottom: 0.1%;
+  color: var(--text-c);
+  text-decoration: none;
+  transition: border 0.4s;
+}
+
+.nav-bar-links-container a:hover {
+  color: var(--accent-c);
+  border-color: var(--accent-c);
+  border-width: 8px;
+}
+
+.nav-bar-logo:hover {
+  rotate: 360deg;
+}
+
+.nav-bar-logo:active {
+  filter: invert(1);
+}
+
+.nav-bar-logo-container:has(.nav-bar-logo:active) {
+  /* Éste operador, aplica el estilo solo cuando el logo es active. */
+  background-color: var(--accent-c);
+}
+
+/* Nav-bar =>Ends<= */
+
+/* Publicaciones y cards =>Starts<= */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-main {
+  overflow: hidden;
+  display: flex;
+  background-color: var(--secondary-c);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  margin: 2%;
+  /* Una sutil transicion que hace mas grande el article en la que estamos hover */
+  transition: transform 0.4s ease, background-color 0.5s ease-in-out;
+}
+
+.card-text,
+.card-img {
+  display: flex;
+  flex: 1;
+  /* para que los 2 containers ocupen el mismo espacio */
+  text-align: justify;
+}
+
+.card-text h2 {
+  color: var(--accent-c);
+  text-align: left;
+}
+
+.card-text {
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5%;
+}
+
+.card-text p {
+  border: 1px solid var(--sad-accent);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0 10px 0;
+}
+
+.card-img {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.color-fecha {
+  font-style: italic;
+  color: var(--sad-accent);
+}
+
+.color-especial {
+  color: var(--text-c);
+}
+
+.card-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+}
+
+.card-main:hover {
+  transform: scale(1.01);
+  /* background-color: var(--accent-background-c); */
+}
+
+/* Publicaciones y cards =>Ends<= */
+
+/* Buttons =>Starts<= */
+
+/* normal */
+.button-link {
+  color: var(--text-c);
+  background-color: var(--background-c);
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.button-link:hover {
+  background-color: var(--secondary-c);
+}
+
+.button-link:active {
+  background-color: var(--text-c);
+  color: var(--secondary-c);
+}
+
+/* info */
+.button-link-info {
+  background-color: var(--bttn-accent);
+  color: var(--text-c);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.button-link-info:hover {
+  background-color: var(--bttn-hover);
+}
+
+/* proyect */
+.button-link-proyect {
+  background-color: var(--sad-accent);
+  color: var(--text-c);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.button-link-proyect:hover {
+  background-color: var(--sad-accentp);
+}
+
+/* Link-buttons =>Ends<= */
+
+footer {
+  background-color: var(--secondary-c);
+  text-align: center;
+  padding: 30px;
+}
+
+footer a {
+  color: var(--accent-c);
+}
+
+footer p {
+  margin: 0px;
+}
+
+.author {
+  color: var(--accent-c);
+}
+
+@media (max-width: 600px) {
+  .card-main {
+    flex-direction: column;
+  }
+}

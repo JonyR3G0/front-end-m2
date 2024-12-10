@@ -31,12 +31,16 @@
 
 ## 👩🏻‍🏫 Lista de clases
 
-| # de clase |                                Tema                                |
-| ---------- | :----------------------------------------------------------------: |
-| Clase #0   |   Introduccion a CSS:Historia, introducción, ejemplos de codigo    |
-| Clase #1   |       Trabajando Box model, display, buenas practicas, etc.        |
-| Clase #2   | Conceptos de herencia, especificidad y el efecto de cascada de CSS |
-| Clase #3   |                              FLEXBOX                               |
+| # de clase | Fecha      |                                Tema                                |
+| ---------- | ---------- | :----------------------------------------------------------------: |
+| Clase #0   | 19-11-2024 |   Introduccion a CSS:Historia, introducción, ejemplos de codigo    |
+| Clase #1   | 21-11-2024 |       Trabajando Box model, display, buenas practicas, etc.        |
+| Clase #2   | 26-11-2024 | Conceptos de herencia, especificidad y el efecto de cascada de CSS |
+| Clase #3   | 28-11-2024 |                              FLEXBOX                               |
+| Clase #4   | 3-12-2024  |      Flexbox p2 (alineacion), práctica, nuevas etiquetas CSS       |
+| Clase #5   | 5-12-2024  |                     Position, buenas practicas                     |
+| Clase #6   | -          |                                 -                                  |
+| Clase #7   | -          |                                 -                                  |
 
 ## 🗺️ Roadmap tareas y pendientes
 

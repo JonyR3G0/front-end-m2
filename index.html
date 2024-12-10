@@ -5,127 +5,217 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- META INFO END -->
+
     <!-- RSURCS START -->
-    <!-- CSS styles -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- IMPRT FONT FROM GOOGLE FONTS -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style_index.css" />
+    <!-- FONTs FROM GOOGLE FONTS -->
+    <!-- Pixelify -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="./assets/ico/programming.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Unica one -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon -->
+    <link rel="icon" href="./assets/ico/icon.svg" type="image/x-icon" />
     <!-- RSURCES END -->
     <title>Front end | Módulo 2</title>
   </head>
   <body>
     <header>
-      <h1>
-        <a href="#">ProjectHub ||</a> <span class="sad-accent">Dev.f</span
-        ><span style="color: #238636; font-style: italic"> mII</span>
-      </h1>
+      <nav class="nav-bar">
+        <a
+          aria-label="Logotipo módulo 2 dev.f"
+          class="nav-bar-logo-container"
+          href="#"
+        >
+          <img
+            class="nav-bar-logo"
+            src="./assets/img/logo-white-m2-devf.png"
+            alt="Logotipo módulo 2 dev.f"
+          />
+        </a>
+
+        <h1>ProjectHub II</h1>
+        <ul class="nav-bar-links-container">
+          <li><a href="#">Contacto 💬</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <!-- Inicio de articles, son targetas de proyectos con links a paginas wiki y el proyecto, class proyect-bttn tiene el estilo para linkear los proyectos y la class info para la wiki -->
-      <!-- Este article es para el proyecto final, de preferencia dejar hasta arriba -->
-      <article>
-        <h2>Star <i>bonks</i> - <span class="sad-accent">21-11-2024</span></h2>
-        <!-- <img
-          src="./assets/img/Captura de pantalla 2024-11-25 210645.png"
-          alt="Starbucks site"
-          width="150"
-        /> -->
-        <p>
-          En esta practica, estoy clonando la pagina de starbucks usando todos
-          los recursos que he aprendido hasta ahora
-        </p>
-        <a
-          class="project-bttn"
-          href="./star_bonks/starbucks_home_page.html"
-          >Starbucks clon</a
-        >
-        <a
-          class="info-bttn"
-          href="./star_bonks/info/info_star_bonks.html"
-          >Info del proyecto</a
-        >
-      </article>
-
-      <!-- Este article es para la clase del 19-11-2024 -->
-      <article>
-        <h2>
-          big <i>boi</i> - <span class="sad-accent">21-11-2024</span>
-        </h2>
-        <!-- <img
-          src="./assets/img/Captura de pantalla 2024-11-25 210645.png"
-          alt="Starbucks site"
-          width="150"
-        /> -->
-        <p>
-          Esta fue el primer sitio donde integramos CSS en el curso, la idea era hacer una landing page de un "curso de css", y al final dejé un gran pequeño easter-egg (por eso el nombre, y por eso esta mal escrito es una broma uwu)
-        </p>
-        <a class="project-bttn" href="./19-11-2024/index.html"
-          >BIG boi</a
-        >
-      </article>
-
-      <!-- Este article es para la clase del 21-11-2024 -->
-      <article>
-        <h2>
-          Display <i>practice</i> - <span class="sad-accent">21-11-2024</span>
-        </h2>
-        <!-- <img
-          src="./assets/img/Captura de pantalla 2024-11-25 210645.png"
-          alt="Starbucks site"
-          width="150"
-        /> -->
-        <p>
-          En esta practica, trabajamos los conceptos de los tipos de display, el
-          box model y otras cosillas mas de CSS
-        </p>
-        <a class="project-bttn" href="./21-11-2024/index.html"
-          >Display practice</a
-        >
-      </article>
-
-      <!-- Este article es sobre la clase del 26-11-2024 -->
-      <article>
-        <h2>
-          Pixel <i>checklist</i> - <span class="sad-accent">26-11-2024</span>
-        </h2>
-        <!-- <img
-          src="./assets/img/Captura de pantalla 2024-11-25 210645.png"
-          alt="Starbucks site"
-          width="150"
-        /> -->
-        <p>
-          En esta practica, trabajamos los conceptos de herencia, especificidad
-          y el efecto de cascada de CSS integrandolo en una pequeña checklist
-        </p>
-        <a class="project-bttn" href="./26-11-2024/herencias_cascada.html"
-          >Pixel checklist</a
-        >
-      </article>
-
-            <!-- Este article es sobre la clase del 28-11-2024 -->
-            <article>
-              <h2>
-                THE <i>flexbox</i> - <span class="sad-accent">28-11-2024</span>
-              </h2>
-              <!-- <img
-                src="./assets/img/Captura de pantalla 2024-11-25 210645.png"
-                alt="Starbucks site"
-                width="150"
-              /> -->
-              <p>
-                En esta práctica estuvimos trabajando flexbox y agregando funcionalidades, (hasta le pusimos tema con JS!)
-              </p>
-              <a class="project-bttn" href="./28-11-2024/flexbox.html"
-                >THE flexbox</a
+      <!-- Inicio de articles -->
+      <section class="cards-container">
+        <!-- note Este article es para el proyecto final, de preferencia dejar hasta arriba -->
+        <article class="card-main">
+          <div class="card-text">
+            <h2>☕ Star bonks | <span class="color-especial">🏆 Proyecto final 🌟</span></h2>
+            <p>
+              En esta practica, estoy clonando la pagina de starbucks usando
+              todos los recursos que he aprendido hasta ahora
+            </p>
+            <div class="card-buttons-container">
+              <a
+                class="button-link-proyect"
+                href="./star_bonks/starbucks_home_page.html"
               >
-            </article>
+                ☕ Starbucks clon
+              </a>
+              <a
+                class="button-link-info"
+                href="./star_bonks/info/info_star_bonks.html"
+              >
+                ℹ️ Wiki dev.
+              </a>
+            </div>
+          </div>
+          <div class="card-img">
+            <img src="./assets/img/star-bonks.png" alt="Starboncks site" />
+          </div>
+        </article>
+
+        <!-- Este article es para la clase del 19-11-2024 -->
+        <article class="card-main">
+          <div class="card-text">
+            <h2>🔳 BIG boi | <span class="color-fecha">21-11-2024</span></h2>
+            <p>
+              Esta fue el primer sitio donde integramos CSS en el curso, la idea
+              era hacer una landing page de un "curso de css", y al final dejé
+              un gran pequeño easter-egg (por eso el nombre, y por eso esta mal
+              escrito es una broma uwu)
+            </p>
+            <div class="card-buttons-container">
+              <a class="button-link-proyect" href="./19-11-2024/index.html"
+                >🔳 BIG boi</a
+              >
+            </div>
+          </div>
+          <div class="card-img">
+            <img src="./assets/img/big-boi.png" alt="BIG boi project" />
+          </div>
+        </article>
+
+        <!-- Este article es para la clase del 21-11-2024 -->
+        <article class="card-main">
+          <div class="card-text">
+            <h2>
+              📺 Display practice |
+              <span class="color-fecha">21-11-2024</span>
+            </h2>
+            <p>
+              En esta practica, trabajamos los conceptos de los tipos de
+              display, el box model y otras cosillas mas de CSS
+            </p>
+            <div class="card-buttons-container">
+              <a class="button-link-proyect" href="./21-11-2024/index.html">
+                📺 Display practice
+              </a>
+            </div>
+          </div>
+          <div class="card-img">
+            <img
+              src="./assets/img/display-practice.png"
+              alt="Display practice"
+            />
+          </div>
+        </article>
+
+        <!-- Este article es sobre la clase del 26-11-2024 -->
+        <article class="card-main">
+          <div class="card-text">
+            <h2>
+              👾 Pixel checklist | <span class="color-fecha">26-11-2024</span>
+            </h2>
+            <p>
+              En esta practica, trabajamos los conceptos de herencia,
+              especificidad y el efecto de cascada de CSS integrandolo en una
+              pequeña checklist
+            </p>
+            <div class="card-buttons-container">
+              <a
+                class="button-link-proyect"
+                href="./26-11-2024/herencias_cascada.html"
+              >
+              👾 Pixel checklist
+              </a>
+            </div>
+          </div>
+          <div class="card-img">
+            <img
+              src="./assets/img/pixel-check-list.png"
+              alt="Pixel checklist"
+            />
+          </div>
+        </article>
+
+        <!-- Este article es sobre la clase del 28-11-2024 -->
+        <article class="card-main">
+          <div class="card-text">
+            <h2>🌓 THE flexbox | <span class="color-fecha">28-11-2024</span></h2>
+            <p>
+              En esta práctica estuvimos trabajando flexbox y agregando
+              funcionalidades, (hasta le pusimos tema con JS!)
+            </p>
+            <div class="card-buttons-container">
+              <a class="button-link-proyect" href="./28-11-2024/flexbox.html"
+                >🌓 THE flexbox</a
+              >
+            </div>
+          </div>
+          <div class="card-img">
+            <img src="./assets/img/the-flex-box.png" alt="THE flexbox" />
+          </div>
+        </article>
+
+        <!-- Este article es sobre la clase del 3-12-2024 -->
+        <article class="card-main">
+          <div class="card-text">
+            <h2>⛹️ ChaleCO™ | <span class="color-fecha">3-12-2024</span></h2>
+            <p>
+              Una inigualable tienda de chalecos (y moda en general), productos
+              unic0s! En esta ocasion trabajamos un proyecto tipo landing page
+              de una marca de moda, aprendimos qué es un #hero, y bastantes
+              nuevas etiquetas de css, así como practicar con flexbox.
+            </p>
+            <div class="card-buttons-container">
+              <a class="button-link-proyect" href="./3-12-2024/practica.html"
+                >⛹️ ChaleCO™</a
+              >
+            </div>
+          </div>
+          <div class="card-img">
+            <img src="./assets/img/chale-co.png" alt="ChaleCO™ project" />
+          </div>
+        </article>
+
+        <!-- Este article es sobre la clase del 5-12-2024 -->
+        <article class="card-main">
+          <div class="card-text">
+            <h2>🖼️ my / galer IA | <span class="color-fecha">5-12-2024</span></h2>
+            <p>
+              Una galería con IA pero sin IA (como cualquier producto
+              ultimamente). En esta practica aprendimos y aplicamos los
+              conceptos de position para hacer una galeria tipo pinterest.
+            </p>
+            <div class="card-buttons-container">
+              <a class="button-link-proyect" href="./5-12-2024/pos.html"
+                >🖼️ my / galer IA</a
+              >
+            </div>
+          </div>
+          <div class="card-img">
+            <img src="./assets/img/galer-ia.png" alt="my / galer IA project" />
+          </div>
+        </article>
+      </section>
     </main>
 
     <!-- Footer -->
