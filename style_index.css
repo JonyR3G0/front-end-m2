@@ -9,6 +9,21 @@
 
   --bttn-accent: #238636;
   --bttn-hover: #2ea043;
+
+/* Estilo para codes */
+
+  --color-code-red:rgba(255, 0, 0, 0.178);
+  --color-code-red-over:rgb(209, 173, 173);
+
+  --color-code-green:rgba(17, 88, 23, 0.589);
+  --color-code-green-over:rgb(188, 206, 186);
+
+  --color-code-yellow:rgba(238, 255, 0, 0.363);
+  --color-code-yellow-over:rgb(209, 207, 173);
+
+  --color-code-main:rgb(0, 0, 0);
+  --color-code-main-over:#00ffffff;
+
 }
 
 * {
@@ -133,6 +148,37 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding: 0.5%;
+}
+
+.estilo-code-red{
+  font-family: monospace;
+  background-color: var(--color-code-red);
+  color: var(--color-code-red-over);
+  padding: 1px;
+  border-radius: 15px;
+}
+
+.estilo-code-yellow{
+  font-family: monospace;
+  background-color: var(--color-code-yellow);
+  color: var(--color-code-yellow-over);
+  padding: 1px;
+  border-radius: 15px;
+}
+
+.estilo-code-green{
+  font-family: monospace;
+  background-color: var(--color-code-green);
+  color: var(--color-code-green-over);
+  padding: 1px;
+  border-radius: 15px;
+}
+
+code{
+  background-color: var(--color-code-main);
+  color: var(--color-code-main-over);
+  padding: 2px;
+  border-left: 1px solid var(--color-code-main-over);
 }
 
 .card-text p {

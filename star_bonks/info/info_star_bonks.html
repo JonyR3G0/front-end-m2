@@ -25,10 +25,19 @@
       href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
       rel="stylesheet"
     />
+    <!-- Doto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts from google fonts ENDS -->
+
     <!-- Icon -->
     <link rel="icon" href="../../assets/ico/icon.svg" type="image/x-icon" />
     <!-- RSURCES END -->
-    <title>Front end | ℹ️ Wiki dev </title>
+    <title>Front end | ℹ️ Wiki dev</title>
   </head>
   <body>
     <header>
@@ -51,29 +60,86 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="cards-container">
+
+    <main aria-label="Contenido principal">
+      <section aria-labelledby="Contenido principal" class="cards-container">
         <article class="card-main">
           <div class="card-text">
             <h2>
-              👨🏻‍💻 Desarrollo del primer commit 
+              👨🏻‍💻 Desarrollo del segundo commit
+              <span class="color-fecha">| 6-12-2024</span>
+            </h2>
+            <p>
+              <span class="estilo-code-red">! Corrección de errores ==></span>
+              🎫 En este commit me di cuenta de que el logo forma parte del
+              mismo contenedor que las 2 primeras opciones del menú (Menu y
+              Rewards) para poder usar la propiedad de
+              <code>flex justify-content: space between;</code> y agregarles
+              padding a los bordes.
+            </p>
+
+            <p>
+              <span class="estilo-code-yellow"
+                >! Implementaciones sin terminar ==></span
+              >
+              🎫 Estoy trabajando en los articles, pero hace falta un poco más
+              de trabajo para que queden igual que en el sitio original. (aunque
+              creo que en el sitio original usan <code>display:grid;</code>),
+              pero yo creo que sí puedo con flexbox. 💡 De la misma manera queda
+              pendiente agregar !==> El pre-footer !==> Las otras páginas !==> Idear
+              como van a funcionar las 2 tarjetas chiquitas finales.
+            </p>
+
+            <p>
+              <span class="estilo-code-green">! Nueva clase adquirida ==></span>
+              🎫 Ya que en clase vimos como funcionan las herencias en CSS y el
+              tema de la especificidad, me ayudo mucho para poder reorganizar el
+              CSS y usar clases como <code>Inherit</code>, aún hay mucho camino
+              por delante para perfeccionar los estilos...
+            </p>
+          </div>
+          <div class="card-img">
+            <img
+              class="section-img"
+              src="./assets/img/Code-entrada-2.png"
+              alt="Inherit en codigo CSS"
+            />
+          </div>
+        </article>
+
+        <article class="card-main">
+          <div class="card-text">
+            <h2>
+              👨🏻‍💻 Desarrollo del primer commit
               <span class="color-fecha">| 27-11-2024</span>
             </h2>
             <p>
-              Antes de comenzar a desarrollar el clon, es vital analizar la
-              pagina (siguiendo mi
+              🎫 Antes de comenzar a desarrollar, es vital analizar la página
+              (siguiendo el
               <a
                 href="https://github.com/JonyR3G0/front-end-m2?tab=readme-ov-file#-workflow-proyecto-final"
-                >workflow</a
-              >), aquí adjunto la labor que lleve a cabo de analizar la
-              estructura básica que tiene el sitio
+                >flujo de trabajo</a
+              >
+              que diseñé), aquí adjunto la labor que lleve a cabo de analizar la
+              estructura básica que tiene el sitio.
+            </p>
+            <p>
+              🎫 Escogí comenzar por la landing page, aunque la idea es expandir
+              a todas las páginas sub.
+            </p>
+            <p>
+              🎫 La idea principal era hacer un prototipo de una página estilo
+              Duolingo para aprender alguna lengua indígena, pero es una labor
+              que requiere una investigación más profunda, como también ¡JS!
             </p>
           </div>
-          <div class="card-img">          <img
-            class="section-img"
-            src="./assets/img/analisis-landing-page-1.png"
-            alt="Analisis de la landing page de starbucks"
-          /></div>
+          <div class="card-img">
+            <img
+              class="section-img"
+              src="./assets/img/analisis-landing-page-1.png"
+              alt="Analisis de la landing page de starbucks"
+            />
+          </div>
         </article>
       </section>
     </main>
