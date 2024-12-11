@@ -40,6 +40,12 @@
       type="image/x-icon"
     />
 
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,1,-25&icon_names=distance"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="style_star_bonks.css" />
 
@@ -47,28 +53,46 @@
   </head>
   <body>
     <header>
-      <nav class="nav-bar" aria-label="Barra de navegación principal">
+      <nav class="nav-bar-container" aria-label="Barra de navegación principal">
         <div
-          class="nav-link-izq"
+          class="nav-bar-izq"
           aria-labelledby="Barra de navegación principal"
         >
-          <a href="#" aria-label="Logo starbuks - ir a la pagina pricipal"
-            ><img
-              src="https://www.starbucks.com.mx/static/images/logo.svg"
-              alt="logo starbucks"
-              width="50"
-              height="50"
-          /></a>
-          <a href="#">MENU</a>
-          <a href="#">REWARDS</a>
+          <div>
+            <ul class="logo-container">
+              <li class="logo">
+                <a href="#" aria-label="Logo starbuks - ir a la pagina pricipal"
+                  ><img
+                    src="https://www.starbucks.com.mx/static/images/logo.svg"
+                    alt="logo starbucks"
+                    width="50"
+                    height="50"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="main-menu">
+              <li><a href="#">MENU</a></li>
+              <li><a href="#">REWARDS</a></li>
+            </ul>
+          </div>
         </div>
         <div
-          class="nav-link-der"
+          class="nav-bar-der"
           aria-labelledby="Barra de navegación principal"
         >
-          <a href="#">Localizar Tienda</a>
-          <a class="nav-bar-user-in" href="#">Ingresar</a>
-          <a class="nav-bar-user-new" href="#">Únete</a>
+          <div>
+            <a class="encuentra-tienda" href="#"
+              ><span class="material-symbols-outlined"> distance </span>
+              Localizar Tienda</a
+            >
+          </div>
+
+          <div class="user-auth-container">
+            <a class="nav-bar-user-in" href="#">Ingresar</a>
+            <a class="nav-bar-user-new" href="#">Únete</a>
+          </div>
         </div>
       </nav>
     </header>

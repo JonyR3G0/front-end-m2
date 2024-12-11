@@ -2,9 +2,11 @@
   /* Colores usados en la estructura general */
 
   --verde-starbucks: #006241;
+  --verde-accento-menu: #007c4f;
   --gris-sombra: #eaeaea;
   --background-blanco-main: #ffffff;
-  --botones-negro: #000000;
+  --botones-negro: #000;
+  --semi-negro-nav: #1f1f1f;
   --accento-gris: #333333;
 
   /* Articles: */
@@ -22,6 +24,44 @@
   --text-articles-main: #ffffff;
 }
 
+@font-face {
+  font-family: "SoDo-mine";
+  src: url("") format("woff2"),
+    url("./assets/fonts/HindJalandhar-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SoDo-mine";
+  src: url("") format("woff2"),
+    url("./assets/fonts/HindJalandhar-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SoDo-mine";
+  src: url("") format("woff2"),
+    url("./assets/fonts/HindJalandhar-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SoDo-mine";
+  src: url("./assets/fonts/HindJalandhar-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SoDo-mine";
+  src: url("./assets/fonts/HindJalandhar-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
 /* Selectores generales - start - */
 
 * {
@@ -33,7 +73,7 @@
 }
 
 body {
-  font-family: SoDo Sans, Helvetica, Arial, sans-serif;
+  font-family: SoDo-mine, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
@@ -41,49 +81,115 @@ body {
 }
 
 header {
-  padding: 20px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
   background-color: var(--background-blanco-main);
-  color: var(--botones-negro);
+  color: var(--semi-negro-nav);
 }
 
 /* Selectores generales - end - */
-/* Nav-bar -start- */
 
-header nav {
-  display: inline-block;
-}
+/* Nav bar => Starts <= */
 
 header a {
   font-weight: bolder;
-  color: var(--botones-negro);
+  color: var(--semi-negro-nav);
   text-decoration: none;
 }
 
+.nav-bar-container {
+  display: flex;
+  width: 1200px;
+  height: 50px;
+  padding: 20px 0;
+  margin: 0 70px 0 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar-der,
+.nav-bar-izq {
+  display: flex;
+  align-items: center;
+}
+
+/* Nav-bar IZQ */
+
+.nav-bar-izq {
+  padding-right: 40px;
+  gap: 45px;
+  letter-spacing: 0.1em;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.logo a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.main-menu a {
+  padding-bottom: 23px;
+}
+
+.main-menu a:hover {
+  color: var(--verde-accento-menu);
+  border-bottom: 5px solid var(--verde-starbucks);
+}
+
+.nav-bar-der {
+  padding-left: 40px;
+  gap: 40px;
+  font-weight: 400;
+}
+
+/* Nav-bar IZQ ENDS */
+/* Nav bar DER */
+
+.user-auth-container{
+  display: flex;
+  gap: 20px;
+}
+
+.encuentra-tienda{
+  display: flex;
+  align-items: center;
+}
+
 .nav-bar-user-in {
-  padding: 7px 16px;
+  padding: 3px 16px;
   border: 1px solid var(--botones-negro);
   border-radius: 25px;
 }
 
 .nav-bar-user-new {
-  padding: 7px 16px;
+  padding: 3px 16px;
   background-color: var(--botones-negro);
   color: var(--text-articles-main);
   border: 1px solid var(--botones-negro);
   border-radius: 25px;
 }
 
-.nav-link-der a {
+.nav-bar-der a {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-.nav-link-izq a:hover {
-  color: var(--verde-starbucks);
-  text-decoration: underline solid var(--verde-starbucks) 5px;
-}
-
-.nav-link-der a:hover {
+.nav-bar-der a:hover {
   color: var(--accento-gris);
 }
 
@@ -91,7 +197,7 @@ header a {
   color: var(--accento-gris);
 }
 
-.nav-link-der .nav-bar-user-new:hover {
+.nav-bar-der .nav-bar-user-new:hover {
   background-color: var(--accento-gris);
   color: var(--text-articles-main);
 }
@@ -99,39 +205,38 @@ header a {
 /* Navbar - end - */
 /* Cards - start  */
 
-.cards{
+.cards {
   color: var(--text-articles-main);
   font-weight: bold;
   font-stretch: ultra-expanded;
 }
 
-.card-container{
+.card-container {
   display: flex;
   justify-content: space-between;
 }
 
-.card-container-txt{
+.card-container-txt {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  
 }
 
-.card-green{
+.card-green {
   color: inherit;
   font-weight: inherit;
   font-stretch: inherit;
   background-color: var(--article-verde);
 }
 
-.card-cherry{
+.card-cherry {
   background-color: var(--article-cherry);
 }
 
-.card-blue{
- background-color: var(--article-azul);
+.card-blue {
+  background-color: var(--article-azul);
 }
 
 /* Cards end */
