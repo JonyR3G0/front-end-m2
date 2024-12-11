@@ -12,9 +12,10 @@
 - [🧰 Estructura del Proyecto](#-estructura-del-proyecto)
 - [👩🏻‍🏫 Lista de clases](#-lista-de-clases)
 - [🗺️ Roadmap tareas y pendientes](#%EF%B8%8F-roadmap-tareas-y-pendientes)
-<!-- Hey!!!!!! bingo! supongo que es el codigo hex o algo asi pero,%EF%B8%8F es el emoji  -->
 - [🚀 Workflow proyecto final](#-workflow-proyecto-final)
 - [🔍 Retos y Soluciones](#-retos-y-soluciones)
+
+<!-- Hey!!!!!! bingo! supongo que es el codigo hex o algo asi pero,%EF%B8%8F es el emoji del cohete  -->
 
 ## 📖 Introducción
 
@@ -50,8 +51,8 @@
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | Clase #0   | Crear repo y subirlo: empezar a trabajar el proyecto                                                                                       | -                                                                                                                                                                             | Entregada        |
 | Clase #1   | Implementar el Box model, display y mantener las buenas pracicas al proyecto final, **entregar el ultimo commit**                          | Primero hacer el analisis de estructura de la pagina original y luego hacer el html, finalmente implementar el menu de navegacion y la paleta de colores, usando el box model | Entregada        |
-| Clase #2   | Implementar los conceptos de herencia y respetar el estilo del css para que sea limpio, puedo usar la clase `inherit` para heredar estilos | Integrar los elementos y limpiar el CSS                                                                                                                                       | **SIN ENTREGAR** |
-| Clase #3   | Implementar FLEXBOX en los articles de la main y comenzar a trabajar en el menu de productos                                               | -                                                                                                                                                                             | **SIN ENTREGAR** |
+| Clase #2   | Implementar los conceptos de herencia y respetar el estilo del css para que sea limpio, puedo usar la clase `inherit` para heredar estilos | Integrar los elementos y limpiar el CSS                                                                                                                                       | Entregada |
+| Clase #3   | Implementar FLEXBOX en los articles de la main y comenzar a trabajar en el menu de productos                                               | -                                                                                                                                                                             | Entregada |
 
 ## 🚀 Workflow proyecto final
 
