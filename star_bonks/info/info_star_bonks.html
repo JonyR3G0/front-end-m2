@@ -63,14 +63,148 @@
 
     <main aria-label="Contenido principal">
       <section aria-labelledby="Contenido principal" class="cards-container">
-        <article class="card-main">
+        <!-- 11-12-2024 -->
+        <div class="card-main">
           <div class="card-text">
             <h2>
-              👨🏻‍💻 Desarrollo del segundo commit
+              💄 FLEX DOMINANCE
+              <span class="color-fecha">| 11-12-2024</span>
+            </h2>
+            <p>
+              <span class="estilo-code-green">! Nueva implementación ==></span>
+              🎫 ¡Hey! Que bien que se ve. En este commit finalicé la primera
+              versión funcional para los banners de la main page, finalmente se
+              ve bastante idéntica a la original... algo interesante es que
+              estuve procurando añadir medidas relativas de una a los elementos
+              nuevos y antiguos que edite en este commit, por lo cual me di
+              cuenta de que si el contenedor padre de las cards/banner
+              configuraba <code>with: 100vw ;</code> se desplegaba unos píxeles
+              de más a la derecha y me aparecía la barra para desplegarme hacia
+              la derecha. No tengo idea a que se deba, pero me imagino que está
+              relacionado con que main y body están configurados para usar el
+              100% del vh y vw. Lo solucioné fácilmente cambiándo a
+              <code>with: 100% ;</code>
+            </p>
+
+            <p>
+              <span class="estilo-code-yellow"
+                >! Implementaciones sin terminar ==></span
+              >
+              🎫 Finalmente puedo dejar reposar el pendiente de los articles. Me
+              falta !==> El pre-footer !==> Las otras páginas !==> Idear como
+              van a funcionar las 2 tarjetas chiquitas finales.
+            </p>
+
+            <p>
+              <span class="estilo-code-yellow">! Buenas prácticas ==></span>
+              🎫 Ayer en clase un compañero hizo la pregunta sobre en que casos
+              usar article, y la verdad, aunque ya lo habíamos hablado en el
+              módulo uno, no sé cómo se me paso. (=> ¿tendré articulitis? <=)
+              así que en la próxima massive update de buenas prácticas y
+              depuración de código me desharé de esos articles.
+            </p>
+
+            <p>
+              <span class="estilo-code-red">! Bug a la vista ==></span>
+              🎫 Y al fondo de la página... algo que no esperaba, así es, como
+              las otras 2 imágenes no son de la misma resolución, flex readapta
+              el contenido, voy a trabajar esto en mi siguiente commit, pero de
+              momento estoy pensando en estandarizar el <code>with</code> de las
+              cards con una medida relativa para que no se redimensionen, pero
+              no sé qué tan bueno sea, pero ya lo veré en su momento...
+            </p>
+          </div>
+          <div class="card-img">
+            <img
+              class="section-img"
+              src="./assets/img/flex-articles.png"
+              alt="Imagen del diseño de mis articles con flex implementado"
+            />
+            <img
+              class="section-img"
+              src="./assets/img/casi-bien.png"
+              alt="Imagen de los errores de mi diseño actual"
+            />
+            <a
+              class="commit-link"
+              href="https://github.com/JonyR3G0/front-end-m2/commit/f9e5bd9d423e166d876aaff2c223cf8a250bfe16"
+              target="_blank"
+            >
+              Ver código del commit
+            </a>
+          </div>
+        </div>
+        <!-- 10-12-2024 -->
+        <div class="card-main">
+          <div class="card-text">
+            <h2>
+              🚀 Menú, styles!
+              <span class="color-fecha">| 10-12-2024</span>
+            </h2>
+            <p>
+              <span class="estilo-code-green">! Nueva implementación ==></span>
+              🎫 ¡Wow! Vaya que hubo que rehacer el menú de nav: lo integré para
+              que sea casi idéntico al original, estuve analizando las medidas
+              para que las mías fueran fidedignas a las originales, lo cual
+              llevo un poco más de trabajo de lo esperado, ya que en la page
+              original hacen uso de <code>grid</code>, algo que noté, es que, al
+              no tener el link del logo dentro de un contenedor, había ciertos
+              desperfectos al flexbox detectar los bordes del logo, es cuando
+              menos interesante... al final solamente hizo falta declarar un
+              <code>div class="logo"/div</code> y dentro insertarlo, nada del
+              otro mundo.
+            </p>
+
+            <p>
+              <span class="estilo-code-green">! Nueva implementación ==></span>
+              🎫 Una palabra: TIPOGRAFÍA, de verdad que el sitio se veía a
+              kilómetros nada igual al original, simplemente por la tipografía,
+              y ya que SoDo sans (que es la tipografía original) es propietaria
+              de Starbucks, se me ocurrió buscar alguna otra fuente que hiciera
+              match y que fuera similar a la original. Al final he encontrado
+              una que da el gatazo bastante bien, con licencia para uso
+              personal: HindJalandhar (Lo sé, el nombre no promete, pero
+              funciona de maravilla).
+            </p>
+
+            <p>
+              <span class="estilo-code-yellow"
+                >! Implementaciones sin terminar ==></span
+              >
+              🎫 Los articles aún no los trabajo, sigo con los pendientes
+              pasados !==> El pre-footer !==> Las otras páginas !==> Idear como
+              van a funcionar las 2 tarjetas chiquitas finales.
+            </p>
+          </div>
+          <div class="card-img">
+            <img
+              class="section-img"
+              src="./assets/img/Analisis menu.png"
+              alt="Imagen del diseño de mi menu"
+            />
+            <img
+              class="section-img"
+              src="./assets/img/Mi menu!.png"
+              alt="Imagen del diseño del menu original"
+            />
+            <a
+              class="commit-link"
+              href="https://github.com/JonyR3G0/front-end-m2/commit/a87c8b946d3242b13781810dcd61bcc3e1f3f012"
+              target="_blank"
+            >
+              Ver código del commit
+            </a>
+          </div>
+        </div>
+        <!-- 6-12-2024 -->
+        <div class="card-main">
+          <div class="card-text">
+            <h2>
+              🎨 Actualizacion inherit, clean code & articles
               <span class="color-fecha">| 6-12-2024</span>
             </h2>
             <p>
-              <span class="estilo-code-red">! Corrección de errores ==></span>
+              <span class="estilo-code-green">! Corrección de errores ==></span>
               🎫 En este commit me di cuenta de que el logo forma parte del
               mismo contenedor que las 2 primeras opciones del menú (Menu y
               Rewards) para poder usar la propiedad de
@@ -86,8 +220,8 @@
               de trabajo para que queden igual que en el sitio original. (aunque
               creo que en el sitio original usan <code>display:grid;</code>),
               pero yo creo que sí puedo con flexbox. 💡 De la misma manera queda
-              pendiente agregar !==> El pre-footer !==> Las otras páginas !==> Idear
-              como van a funcionar las 2 tarjetas chiquitas finales.
+              pendiente agregar !==> El pre-footer !==> Las otras páginas !==>
+              Idear como van a funcionar las 2 tarjetas chiquitas finales.
             </p>
 
             <p>
@@ -104,18 +238,25 @@
               src="./assets/img/Code-entrada-2.png"
               alt="Inherit en codigo CSS"
             />
+            <a
+              class="commit-link"
+              href="https://github.com/JonyR3G0/front-end-m2/commit/fc4b156d66e82c81b94881cb89e20324ceddaae4#diff-7b0d93d9b1375a190a3aa88e277a7e51bc168a2903218e0552e9fd717951793b"
+              target="_blank"
+            >
+              Ver código del commit
+            </a>
           </div>
-        </article>
-
-        <article class="card-main">
+        </div>
+        <!-- Primer commit -->
+        <div class="card-main">
           <div class="card-text">
             <h2>
               👨🏻‍💻 Desarrollo del primer commit
               <span class="color-fecha">| 27-11-2024</span>
             </h2>
             <p>
-              🎫 Antes de comenzar a desarrollar, es vital analizar la página
-              (siguiendo el
+              <span class="estilo-code-special">! Idea ==></span>🎫 Antes de
+              comenzar a desarrollar, es vital analizar la página (siguiendo el
               <a
                 href="https://github.com/JonyR3G0/front-end-m2?tab=readme-ov-file#-workflow-proyecto-final"
                 >flujo de trabajo</a
@@ -124,13 +265,15 @@
               estructura básica que tiene el sitio.
             </p>
             <p>
-              🎫 Escogí comenzar por la landing page, aunque la idea es expandir
-              a todas las páginas sub.
+              <span class="estilo-code-special">! Idea ==></span> 🎫 Escogí
+              comenzar por la landing page, aunque la idea es expandir a todas
+              las páginas sub.
             </p>
             <p>
-              🎫 La idea principal era hacer un prototipo de una página estilo
-              Duolingo para aprender alguna lengua indígena, pero es una labor
-              que requiere una investigación más profunda, como también ¡JS!
+              <span class="estilo-code-special">! Idea ==></span> 🎫 La idea
+              principal era hacer un prototipo de una página estilo Duolingo
+              para aprender alguna lengua indígena, pero es una labor que
+              requiere una investigación más profunda, como también ¡JS!
             </p>
           </div>
           <div class="card-img">
@@ -139,8 +282,15 @@
               src="./assets/img/analisis-landing-page-1.png"
               alt="Analisis de la landing page de starbucks"
             />
+            <a
+              class="commit-link"
+              href="https://github.com/JonyR3G0/front-end-m2/commit/d300bf2c003073c6d0203c6b6485fc192e2d6601"
+              target="_blank"
+            >
+              Ver código del commit
+            </a>
           </div>
-        </article>
+        </div>
       </section>
     </main>
 

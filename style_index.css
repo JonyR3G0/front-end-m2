@@ -1,7 +1,7 @@
 :root {
   --secondary-c: #020507;
-  --background-c: #151b23;
-  --accent-background-c: #060f14;
+  --background-c: #120236;
+  --accent-background-c: #102936;
   --text-c: #ececec;
   --accent-c: #00ffffff;
   --sad-accent: #226166;
@@ -10,25 +10,28 @@
   --bttn-accent: #238636;
   --bttn-hover: #2ea043;
 
-/* Estilo para codes */
+  /* Estilo para codes */
 
-  --color-code-red:rgba(255, 0, 0, 0.178);
-  --color-code-red-over:rgb(209, 173, 173);
+  --color-code-red: rgba(255, 0, 0, 0.178);
+  --color-code-red-over: rgb(209, 173, 173);
 
-  --color-code-green:rgba(17, 88, 23, 0.589);
-  --color-code-green-over:rgb(188, 206, 186);
+  --color-code-green: rgba(17, 88, 23, 0.589);
+  --color-code-green-over: rgb(188, 206, 186);
 
-  --color-code-yellow:rgba(238, 255, 0, 0.363);
-  --color-code-yellow-over:rgb(209, 207, 173);
+  --color-code-yellow: rgba(238, 255, 0, 0.363);
+  --color-code-yellow-over: rgb(209, 207, 173);
 
-  --color-code-main:rgb(0, 0, 0);
-  --color-code-main-over:#00ffffff;
-
+  --color-code-main: rgb(0, 0, 0);
+  --color-code-main-over: #00ffffff;
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+main{
+  font-size: 14px;
 }
 
 body {
@@ -45,8 +48,9 @@ header {
   letter-spacing: 2px;
   color: var(--text-c);
   background-color: var(--secondary-c);
+  /* border-radius: 0 0 20px 20px; */
   padding: 6px;
-  box-shadow: 0px 0.5px 0px rgb(78, 78, 78); /* Sombra suave */
+  /* border-bottom: 1px solid var(--accent-c); */
 }
 
 /* Nav-bar =>Starts<= */
@@ -123,10 +127,11 @@ header {
   display: flex;
   background-color: var(--secondary-c);
   border-radius: 10px;
+  border: 1px solid var(--accent-c);
   padding: 10px;
   width: 100%;
-  height: auto;
-  margin: 2%;
+  height: 100%;
+  margin: 5rem 5rem 0 5rem;
   /* Una sutil transicion que hace mas grande el article en la que estamos hover */
   transition: transform 0.4s ease, background-color 0.5s ease-in-out;
 }
@@ -150,7 +155,7 @@ header {
   padding: 0.5%;
 }
 
-.estilo-code-red{
+.estilo-code-red {
   font-family: monospace;
   background-color: var(--color-code-red);
   color: var(--color-code-red-over);
@@ -158,7 +163,7 @@ header {
   border-radius: 15px;
 }
 
-.estilo-code-yellow{
+.estilo-code-yellow {
   font-family: monospace;
   background-color: var(--color-code-yellow);
   color: var(--color-code-yellow-over);
@@ -166,7 +171,7 @@ header {
   border-radius: 15px;
 }
 
-.estilo-code-green{
+.estilo-code-green {
   font-family: monospace;
   background-color: var(--color-code-green);
   color: var(--color-code-green-over);
@@ -174,7 +179,53 @@ header {
   border-radius: 15px;
 }
 
-code{
+.estilo-code-special {
+  font-family: monospace;
+  color: var(--text-c);
+  padding: 1px;
+  border-radius: 15px;
+  background: rgb(58, 161, 180);
+  background: linear-gradient(
+    90deg,
+    rgb(39, 110, 122) 0%,
+    rgba(98, 119, 21, 1) 30%,
+    rgba(113, 13, 30, 1) 70%,
+    rgba(20, 26, 96, 1) 100%
+  );
+}
+
+.commit-link {
+  font-family: monospace;
+  font-weight: bold;
+  color: var(--text-c);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid var(--sad-accent);
+  background: linear-gradient(
+      90deg,
+      rgba(58, 161, 180, 0.1) 0%,
+      rgba(98, 119, 21, 0.1) 30%,
+      rgba(113, 13, 30, 0.1) 70%,
+      rgba(20, 26, 96, 0.1) 100%
+  );
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.commit-link:hover {
+  background: linear-gradient(
+      90deg,
+      rgb(39, 110, 122) 0%,
+      rgba(98, 119, 21, 1) 30%,
+      rgba(113, 13, 30, 1) 70%,
+      rgba(20, 26, 96, 1) 100%
+  );
+  border-color: transparent;
+  transform: scale(1.05);
+}
+
+code {
   background-color: var(--color-code-main);
   color: var(--color-code-main-over);
   padding: 2px;
@@ -190,14 +241,18 @@ code{
 
 .card-img {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 100%;
+  justify-content: space-evenly;
+  height: auto;
   overflow: hidden;
 }
 
 .card-img img {
-  width: 100%;
+  width: 90%;
   object-fit: contain;
+  margin: 1rem;
+  border-radius: 20px;
 }
 
 .color-fecha {
@@ -280,6 +335,7 @@ code{
 /* Link-buttons =>Ends<= */
 
 footer {
+  margin-top: 5rem;
   background-color: var(--secondary-c);
   text-align: center;
   padding: 30px;
@@ -297,7 +353,7 @@ footer p {
   color: var(--accent-c);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 830px) {
   .card-main {
     flex-direction: column;
   }
