@@ -1,6 +1,6 @@
 :root {
-  /* Colores usados en la estructura general */
 
+  /* Colores usados en la estructura general */
   --verde-starbucks: #006241;
   --verde-accento-menu: #007c4f;
   --gris-sombra: #eaeaea;
@@ -8,17 +8,25 @@
   --botones-negro: #000;
   --semi-negro-nav: #1f1f1f;
   --accento-gris: #333333;
+  --accento-gris-button-nofill:#EBF5F1;
 
   /* Colores usados en las forms */
-
   --form-color-bg: #edebe9;
   --form-color-item-needed: #e9484c;
   --form-color-text-placeholder: #83747d;
-  --form-colot-text-label: #696766;
+  --form-color-text-label: #696766;
   --form-color-label-bg: #ffffff;
   --form-color-bottom-box: #CCCCCC;
   --form-color-bottom-box-active: #54A963;
 
+  --form-color-button-normal:#00a862;;
+  --form-color-button-pswrd-txt-normal:#006346;
+  --form-color-button-pswrd-txt-hover:#228000;
+  --form-color-button-pswrd-bg-hover:#D5E0D8;
+
+  /* Colores usados en los gradientes */
+  --gradient-color-dark-green:#1D3932;
+  --gradient-color-light-green:#0A684A;
 
   /* Articles: */
   --article-verde: #1e3932;
@@ -26,6 +34,14 @@
   --article-light-azul: #98cde4;
   --article-cherry: #d50032;
   --article-light-cherry: #f6bfd9;
+
+  /* Fake captcha */
+  --captcha-color-bg:#F9F9F9;
+  --captcha-color-border:#D3D3D3;
+
+  /* Banner */
+
+  --banner-color-bg:#2D2926;
 
   /* fuentes */
   --text-over-cherry: #db273c;
@@ -189,14 +205,14 @@ header a {
   align-items: center;
 }
 
-.nav-bar-user-in {
-  padding: 3px 16px;
+.button-link-nofill {
+  padding: 0.3rem 1rem;
   border: 1px solid var(--botones-negro);
   border-radius: 25px;
 }
 
-.nav-bar-user-new {
-  padding: 3px 16px;
+.button-link-fill {
+  padding: 0.3rem 1rem;
   background-color: var(--botones-negro);
   color: var(--text-articles-main);
   border: 1px solid var(--botones-negro);
@@ -207,15 +223,16 @@ header a {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-.nav-bar-der a:hover {
+.nav-bar-der .button-link-nofill:hover {
   color: var(--accento-gris);
+  background-color: var(--accento-gris-button-nofill);
 }
 
 .social-networks a:hover {
   color: var(--accento-gris);
 }
 
-.nav-bar-der .nav-bar-user-new:hover {
+.nav-bar-der .button-link-fill:hover {
   background-color: var(--accento-gris);
   color: var(--text-articles-main);
 }
@@ -304,14 +321,13 @@ header a {
 }
 
 /* Cards end */
-/* Asides ==========================> Starts <========================================= */
-/* .body-aside{
-  height: 90vh;
-} */
+/* Asides styles  ==========================> Starts <========================================= */
+
 .header-sticky {
   position: sticky;
   top: 0vh;
 }
+
 
 .main-aside {
   display: flex;
@@ -322,14 +338,16 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 48px;
   height: 89vh;
   width: 41.5vw;
   position: fixed;
   top: 11vh;
-  z-index: -1000;
+  z-index: 100;
   color: var(--text-articles-main);
+  box-shadow: rgb(204, 204, 204) 7px 0px 4px -4px;
   background: rgb(28, 60, 51);
-  background: linear-gradient(0deg, #1d3e34 0%, #31694b 100%);
+  background: linear-gradient(0deg, var(--gradient-color-dark-green) 0%, var(--gradient-color-light-green) 100%);
 }
 
 .card-aside-fixed h1 {
@@ -339,7 +357,7 @@ header a {
   margin: 1em;
 }
 
-/* Main aside */
+/* Main Aside =================================> STARTS <========================================================== */
 
 .auth-usr-container {
   display: flex;
@@ -348,12 +366,14 @@ header a {
   height: 100%;
   flex-direction: column;
   overflow: hidden;
+  z-index: -1000;
 }
 
-/* FORM */
+/* FORM =============== Starts ===============*/
 
 .form-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--form-color-bg);
@@ -364,30 +384,169 @@ header a {
   flex-direction: column;
   font-family: inherit;
   width: 360px;
-  padding: 3rem 0;
+  padding: 4.5rem 0;
+  margin: auto;
+  text-align: left;
+  align-items: end;
 }
 
+/* Estilo para el * */
 .form-atributo-necesario {
   color: var(--form-color-item-needed);
 }
 
-.form-label {
-  color: var(--form-colot-text-label);
+/* Estilo para las etiquetas */
+label {
+  width: 100%;
+  color: var(--form-color-text-label);
 }
 
-.form-placeholder {
+/* Estilo para el placeholder */
+input::placeholder {
   color: var(--form-color-text-placeholder);
   font-weight: 700;
   font-size: 1rem;
+}
+
+/* Estilo para el input general */
+input {
+  width: 100%;
   padding: 0.75rem;
   border: none;
   background-color: transparent;
-  border-bottom: 2px solid var(--form-color-bottom-box);
-  transition: border-bottom 0.2s ease;
+  border-bottom: 1px solid var(--form-color-bottom-box);
+  transition: border-bottom 0.3s ease;
   margin-bottom: 1rem;
 }
 
-.form-placeholder:focus{
+/* Estado de enfoque */
+input:focus {
   outline: none;
   border-bottom: 2px solid var(--form-color-bottom-box-active);
+}
+
+/* Estilo para cuando la forma es invalida */
+input:invalid:focus{
+  outline: none;
+  border-bottom: 2px solid var(--form-color-item-needed);
+}
+
+/* Estilo del boton submit */
+.form-button-submit{
+  color:var(--text-articles-main); 
+  background-color: var(--form-color-button-normal);
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .24), 0 8px 12px rgba(0, 0, 0, .14);
+  transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in;
+}
+
+.form-button-submit:active{
+  transform: translateY(0.25rem);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .1), 0 8px 19px rgba(0, 0, 0, .1);
+}
+
+/* Estilo botton olvide mi password */
+.form-button-password-recuperation{
+  color:var(--form-color-button-pswrd-txt-normal);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  margin-right: 50%;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Estilo boton pass recup hover */
+.form-button-password-recuperation:hover{
+  color: var(--form-color-button-pswrd-txt-hover);
+  background-color: var(--form-color-button-pswrd-bg-hover);
+}
+
+.google-captcha{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 4rem;
+  margin: 1rem 20% ;
+  background-color: var(--captcha-color-bg);
+  border: 1px solid var(--captcha-color-border);
+}
+
+.google-captcha ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+}
+
+/* El tamaño del checkbox, pero solamente dentro del captcha */
+.google-captcha input[type="checkbox"]{
+  transform: scale(2);
+  margin: 0;
+}
+
+/* Form =========================== Ends ===================== */
+
+.login-promo-banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--banner-color-bg);
+  color: var(--text-articles-main);
+  font-size: 0.75rem;
+  padding: 0.75rem;
+  letter-spacing: 0.05rem;
+}
+
+.info-unete-rewards{
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10rem;
+}
+
+.info-unete-rewards h3{
+  font-weight: 400;
+  text-align: justify;
+}
+
+.info-unete-rewards a{
+  text-decoration: none;
+}
+
+.info-unete-rewards-button-container{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-unete-rewards-button-container .button-link-nofill{
+  border-color: var(--form-color-button-pswrd-txt-hover);
+  color: var(--form-color-button-pswrd-txt-hover);
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button-link-nofill:hover{
+  background-color: var(--accento-gris-button-nofill);
+}
+
+/* Este detallito solo está en el estilo de la page de rewards, pero me gustó asi que lo voy a dejar para todos ya que ando de unificador de estilos */
+
+::selection {
+  background: green;
+  color: #fff;
 }
