@@ -366,7 +366,7 @@ header a {
   height: 100%;
   flex-direction: column;
   overflow: hidden;
-  z-index: -1000;
+  z-index: 0;
 }
 
 /* FORM =============== Starts ===============*/
