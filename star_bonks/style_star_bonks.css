@@ -15,6 +15,7 @@
   --form-color-text-placeholder: #83747d;
   --form-color-text-label: #696766;
   --form-color-label-bg: #ffffff;
+
   --form-color-bottom-box: #cccccc;
   --form-color-bottom-box-active: #54a963;
 
@@ -27,27 +28,32 @@
   --gradient-color-dark-green: #1d3932;
   --gradient-color-light-green: #0a684a;
 
-  /* Articles: */
+  /* Colores usados en los banners de la landing page: */
   --article-verde: #1e3932;
   --article-azul: #0044b4;
   --article-light-azul: #98cde4;
   --article-cherry: #d50032;
   --article-light-cherry: #f6bfd9;
 
-  /* Fake captcha */
+  /* Colores usados en el fake captcha */
   --captcha-color-bg: #f9f9f9;
   --captcha-color-border: #d3d3d3;
 
-  /* Banner */
+  /* Colores usados en el banner en las pages aside */
 
   --banner-color-bg: #2d2926;
 
-  /* fuentes */
+  /* Colores usados en las fuentes */
   --text-over-cherry: #db273c;
   --text-over-light-azul: #003b49;
   --text-light-gray-footer: #999999;
   --text-light-gray-accento-footer: #7c7c7c;
   --text-articles-main: #ffffff;
+
+  /* Colores usados en el footer */
+
+  --footer-main-color-border-gray:#EEEEEE;
+  --footer-main-color-txt-final:#999999;
 }
 
 @font-face {
@@ -642,6 +648,61 @@ input:invalid:focus {
 
 .pre-footer-container-list li {
   padding: 0.7rem 0;
+}
+
+.pre-footer-container-list a:hover{
+  color: var(--botones-negro);
+}
+
+.main-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--footer-main-color-border-gray);
+}
+
+.footer-icon img{
+  width: 35px;
+  height: auto;
+}
+
+.main-footer ul{
+  display: flex;
+  list-style: none;
+}
+
+.main-footer li{
+  padding: 2rem 1rem;
+}
+
+.footer-menu-legal{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.footer-menu-legal a{
+  text-decoration: none;
+  color: var(--footer-main-color-txt-final);
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+
+.footer-menu-legal li{
+  padding: 0 .2rem 0 0;
+}
+
+.main-footer-final{
+  color: var(--footer-main-color-txt-final);
+}
+
+.main-footer-final-baby{
+  color: var(--footer-main-color-txt-final);
+  font-size: 0.75rem;
+  padding-bottom: 1rem;
 }
 
 /* Pre Footer & Footer ================> Ends <==================================== */
