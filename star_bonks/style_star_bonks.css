@@ -52,8 +52,8 @@
 
   /* Colores usados en el footer */
 
-  --footer-main-color-border-gray:#EEEEEE;
-  --footer-main-color-txt-final:#999999;
+  --footer-main-color-border-gray: #eeeeee;
+  --footer-main-color-txt-final: #999999;
 }
 
 @font-face {
@@ -401,6 +401,7 @@ header a {
 
 .card-aside-fixed {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 48px;
@@ -419,14 +420,32 @@ header a {
   );
 }
 
+.card-aside-fixed img{
+  width: 60%;
+}
+
+.background-rewards-aside{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 40%;
+  object-fit: contain;
+}
+
 .card-aside-fixed h1 {
   font-weight: 650;
   letter-spacing: 0.05rem;
-  font-size: 23pt;
+  font-size: 1.92rem;
   margin: 1em;
 }
 
-/* Main Aside =================================> STARTS <========================================================== */
+.card-aside-fixed-rewards h1{
+  font-weight: 400;
+  font-size: 2.333rem;
+  margin-top: .5rem;
+}
+
+/* Main Aside =================================> STARTS <=================================================== */
 
 .auth-usr-container {
   display: flex;
@@ -650,11 +669,11 @@ input:invalid:focus {
   padding: 0.7rem 0;
 }
 
-.pre-footer-container-list a:hover{
+.pre-footer-container-list a:hover {
   color: var(--botones-negro);
 }
 
-.main-footer{
+.main-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -662,21 +681,21 @@ input:invalid:focus {
   border-top: 1px solid var(--footer-main-color-border-gray);
 }
 
-.footer-icon img{
+.footer-icon img {
   width: 35px;
   height: auto;
 }
 
-.main-footer ul{
+.main-footer ul {
   display: flex;
   list-style: none;
 }
 
-.main-footer li{
+.main-footer li {
   padding: 2rem 1rem;
 }
 
-.footer-menu-legal{
+.footer-menu-legal {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -684,22 +703,22 @@ input:invalid:focus {
   margin: 1rem 0 2rem 0;
 }
 
-.footer-menu-legal a{
+.footer-menu-legal a {
   text-decoration: none;
   color: var(--footer-main-color-txt-final);
   font-weight: 400;
   letter-spacing: 0.05rem;
 }
 
-.footer-menu-legal li{
-  padding: 0 .2rem 0 0;
+.footer-menu-legal li {
+  padding: 0 0.2rem 0 0;
 }
 
-.main-footer-final{
+.main-footer-final {
   color: var(--footer-main-color-txt-final);
 }
 
-.main-footer-final-baby{
+.main-footer-final-baby {
   color: var(--footer-main-color-txt-final);
   font-size: 0.75rem;
   padding-bottom: 1rem;
@@ -712,4 +731,80 @@ input:invalid:focus {
 ::selection {
   background: green;
   color: #fff;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card-container-txt {
+    margin: 2rem 0.5rem;
+  }
+
+  .card-container-txt h2 {
+    padding: 1rem 0;
+  }
+
+  .card-container-txt p {
+    padding: 1rem 0;
+    font-weight: 400;
+  }
+
+  .card-izq {
+    flex-direction: column-reverse;
+  }
+
+  .grid-banner {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  /* First break para menú de tablets (esto sale de fusionar los estilos de rewards y landing page */
+
+  .main-menu {
+    display: none;
+  }
+
+  .nav-bar-der {
+    display: none;
+  }
+
+  .nav-bar-container {
+    margin: 0 1rem;
+  }
+
+  /* Media queries para aside pages */
+
+  .main-aside {
+    flex-direction: column;
+  }
+
+  .card-aside-fixed {
+    /* Relative para que la imagen de la mano rewards se contenga dentro de ella al adaptarse */
+    position: relative;
+    top: 0vh;
+    width: 100%;
+    height: auto;
+  }
+
+  .auth-usr-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .background-rewards-aside{
+    max-width: 30%;
+  }
+
+  .info-unete-rewards{
+    margin: 2rem;
+  }
+
+  .info-unete-rewards-button-container{
+    flex-direction: column;
+  }
 }
