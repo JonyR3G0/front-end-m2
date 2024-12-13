@@ -247,7 +247,7 @@ header a {
   color: var(--text-articles-main);
   font-weight: bold;
   font-stretch: ultra-expanded;
-  width: 100%;
+  max-width: 1400px;
 }
 
 .card-container {
@@ -543,6 +543,41 @@ input:invalid:focus{
 .button-link-nofill:hover{
   background-color: var(--accento-gris-button-nofill);
 }
+
+/* Pre Footer & Footer ================> Starts <==================================== */
+
+.pre-footer{
+  padding: 20px 0;
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, .1);
+}
+
+.pre-footer-container{
+  display: flex;
+  padding: 1rem 10rem;
+  gap: 2rem;
+}
+
+.pre-footer-container-list{
+  list-style: none;
+}
+
+.pre-footer-container h3{
+  list-style: none;
+  font-weight: 400;
+}
+
+.pre-footer-container-list a{
+  text-decoration: none;
+  color: var(--text-light-gray-accento-footer);
+}
+
+.pre-footer-container-list li{
+  padding: 0.5rem 0;
+}
+
+
+/* Pre Footer & Footer ================> Ends <==================================== */
+
 
 /* Este detallito solo está en el estilo de la page de rewards, pero me gustó asi que lo voy a dejar para todos ya que ando de unificador de estilos */
 
