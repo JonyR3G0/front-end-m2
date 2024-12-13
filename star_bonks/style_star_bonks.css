@@ -1,5 +1,5 @@
 :root {
-
+ 
   /* Colores usados en la estructura general */
   --verde-starbucks: #006241;
   --verde-accento-menu: #007c4f;
@@ -243,11 +243,14 @@ header a {
 /* Contenedores generales y despliege */
 .cards {
   display: flex;
+  align-items: center;
   flex-direction: column;
   color: var(--text-articles-main);
   font-weight: bold;
   font-stretch: ultra-expanded;
   max-width: 1400px;
+  margin: auto;
+  /* Mil gracias Sensei!!!!! */
 }
 
 .card-container {
