@@ -50,6 +50,8 @@
   --text-light-gray-accento-footer: #7c7c7c;
   --text-articles-main: #ffffff;
 
+  --text-h4-gray: #212529;
+
   /* Colores usados en el footer */
 
   --footer-main-color-border-gray: #eeeeee;
@@ -128,6 +130,17 @@ p {
   white-space: normal;
 }
 
+/* Este h4 se usa mucho en las pages aside */
+
+h4 {
+  color: var(--text-h4-gray);
+  font-size: larger;
+  font-weight: 600;
+}
+
+a{
+  color: var(--verde-starbucks);
+}
 /* Selectores generales - end - */
 
 /* == Nav bar ====================================> Starts <=========================================================================== */
@@ -360,29 +373,29 @@ header a {
   font-size: 1.3rem;
 }
 
-.rewards-card{
+.rewards-card {
   padding: 4rem 4rem 1rem;
 }
 
-.rewards-card h2{
+.rewards-card h2 {
   text-align: center;
   padding-bottom: 2rem;
   font-weight: lighter;
   color: var(--accento-gris);
 }
 
-.rewards-card h3{
+.rewards-card h3 {
   text-align: center;
   padding-bottom: 2rem;
   font-weight: 500;
   color: var(--accento-gris);
 }
 
-.rewards-card p{
+.rewards-card p {
   color: var(--accento-gris);
 }
 
-.rewards-container-benefits{
+.rewards-container-benefits {
   display: flex;
   align-items: baseline;
   justify-content: space-evenly;
@@ -391,7 +404,7 @@ header a {
   width: 100%;
 }
 
-.card-benefit{
+.card-benefit {
   display: flex;
   width: 8.5rem;
   gap: 1rem;
@@ -401,17 +414,132 @@ header a {
   flex-direction: column-reverse;
 }
 
-.card-benefit img{
+.card-benefit img {
   width: 9rem;
 }
 
-.rewards-card-recompensas{
+/* RESET DE OL PARA PODER USARLO DENTRO DE FLEX EN REWARDS */
+/* OL LIST CON CIRCULOS */
+
+ol {
+  counter-reset: list-counter; /* Inicializa el contador */
+  list-style: none; /* Elimina el estilo predeterminado */
+  padding: 0;
+  margin: 0;
+}
+
+ol > li {
+  position: relative; /* Necesario para que el ::before se posicione relativo al <li> */
+  counter-increment: list-counter; /* Incrementa el contador para cada <li> */
+  padding-left: 30px; /* Espacio para el número */
+}
+
+ol > li::before {
+  content: counter(list-counter); /* Inserta el número */
+  position: absolute; /* Posiciona el número libremente */
+  top: 0; /* Alinea con la parte superior del <li> */
+  left: 0; /* Alinea con el borde izquierdo del <li> */
+  /* El circlito verde uwu */
+  /* Para centrar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Tamanio */
+  width: 30px;
+  height: 30px;
+  background-color: var(--verde-starbucks);
+  border-radius: 50%;
+  /* Circulo */
+  font-weight: bold;
+  color: var(--text-articles-main);
+}
+
+.rewards-card-recompensas {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 40px;
   background-color: var(--form-color-bg);
+}
+
+.reutilizable-txt-l{
+  text-align: left;
+}
+
+.reutilizable-txt-c{
+  text-align: center;
+}
+
+.image-rewards-recompensas-list img {
+  max-width: 128px;
+}
+
+.reutilizable-rewards-paddings-t-b {
+  padding: 2rem 0;
+}
+
+.reutilizable-rewards-paddings-a {
+  padding: 2rem;
+}
+
+.reutilizable-container-img-100ps {
+  max-width: 100%;
+}
+
+.reutilizable-container-90ps {
+  max-width: 90%;
+  margin: auto;
+}
+
+.reutilizable-container-80ps {
+  max-width: 80%;
+  margin: auto;
+}
+
+.reutilizable-container-70ps {
+  max-width: 70%;
+  margin: auto;
+}
+
+.reutilizable-container-50ps {
+  max-width: 50%;
+  margin: auto;
+}
+
+.reutilizable-container-40ps {
+  max-width: 40%;
+  margin: auto;
+}
+
+.reutilizable-container-10ps {
+  max-width: 10%;
+  margin: auto;
+}
+
+.reutilizable-flex-center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.reutilizable-flex-center-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.reutilizable-flex-center-row-responsive-column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .grid-banner {
@@ -424,12 +552,12 @@ header a {
   background-color: transparent;
 }
 
-.video-container{
+.video-container {
   max-width: 100%; /* Abarca el ancho disponible */
   margin: auto; /* Centrado si hay espacio */
 }
 
-.video-container iframe{
+.video-container iframe {
   width: 58.5vw;
   height: 80vh;
 }
@@ -446,7 +574,7 @@ header a {
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
-.button-link-color-white-fill{
+.button-link-color-white-fill {
   color: var(--semi-negro-nav);
   text-decoration: none;
   font-weight: bolder;
@@ -485,11 +613,21 @@ header a {
   transition: background-color 0.2s ease-in-out;
 }
 
+.button-link-stores img{
+  height: 3rem;
+  margin: 0 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.button-link-stores img:hover{
+  transform: scale(1.05);
+}
+
 .button-link-color-green:hover {
   background-color: var(--accento-gris-button-nofill);
 }
 
-.button-link-color-hover-green:hover{
+.button-link-color-hover-green:hover {
   color: var(--form-color-button-pswrd-txt-hover);
   border-color: var(--form-color-button-pswrd-txt-hover);
 }
@@ -530,18 +668,19 @@ header a {
 
 .card-aside-fixed img {
   width: 60%;
-  max-width:300px;
+  max-width: 300px;
 }
 
-.user-auth-container-rewards{
+.user-auth-container-rewards {
   display: flex;
   gap: 50px;
-  width:300px;
+  width: 300px;
 }
 
-.user-auth-container-rewards .button-link-nofill, .button-link-fill{
-width: 100%;
-text-align: center;
+.user-auth-container-rewards .button-link-nofill,
+.button-link-fill {
+  width: 100%;
+  text-align: center;
 }
 
 .background-rewards-aside {
@@ -556,7 +695,7 @@ text-align: center;
   font-weight: 650;
   letter-spacing: 0.05rem;
   font-size: 1.92rem;
-  margin: 4rem 0 1rem; 
+  margin: 4rem 0 1rem;
 }
 
 .card-aside-fixed-rewards h1 {
@@ -914,14 +1053,22 @@ input:invalid:focus {
   .info-unete-rewards-button-container {
     flex-direction: column;
   }
-  
-  .user-auth-container-rewards{
+
+  .user-auth-container-rewards {
     flex-direction: column;
     gap: 30px;
     margin-bottom: 15rem;
   }
 
-  .card-benefit{
+  .card-benefit {
     width: 10rem;
+  }
+
+  .reutilizable-flex-center-row-responsive-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
   }
 }
