@@ -14,6 +14,7 @@
   --form-color-item-needed: #e9484c;
   --form-color-text-placeholder: #83747d;
   --form-color-text-label: #696766;
+  --form-color-text-legend: #202529;
   --form-color-label-bg: #ffffff;
 
   --form-color-bottom-box: #cccccc;
@@ -23,6 +24,8 @@
   --form-color-button-pswrd-txt-normal: #006346;
   --form-color-button-pswrd-txt-hover: #228000;
   --form-color-button-pswrd-bg-hover: #d5e0d8;
+
+  --form-color-radius:#C9CCD5;
 
   /* Colores usados en los gradientes */
   --gradient-color-dark-green: #1d3932;
@@ -138,7 +141,7 @@ h4 {
   font-weight: 600;
 }
 
-a{
+a {
   color: var(--verde-starbucks);
 }
 /* Selectores generales - end - */
@@ -464,11 +467,23 @@ ol > li::before {
   background-color: var(--form-color-bg);
 }
 
-.reutilizable-txt-l{
+.rewards-menu-drp-dwn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10%;
+  width: 100%;
+}
+
+.reutilizable-bg-gray {
+  background-color: var(--form-color-bg);
+}
+
+.reutilizable-txt-l {
   text-align: left;
 }
 
-.reutilizable-txt-c{
+.reutilizable-txt-c {
   text-align: center;
 }
 
@@ -493,7 +508,7 @@ ol > li::before {
 }
 
 .reutilizable-container-100ps {
-  max-width: 90%;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -630,13 +645,13 @@ ol > li::before {
   transition: background-color 0.2s ease-in-out;
 }
 
-.button-link-stores img{
+.button-link-stores img {
   height: 3rem;
   margin: 0 1rem;
   transition: transform 0.2s ease-in-out;
 }
 
-.button-link-stores img:hover{
+.button-link-stores img:hover {
   transform: scale(1.05);
 }
 
@@ -723,7 +738,7 @@ ol > li::before {
 
 /* Main Aside =================================> STARTS <=================================================== */
 
-.auth-usr-container {
+.main-aside-container {
   display: flex;
   margin-left: 41.5vw;
   width: 68.5vw;
@@ -735,15 +750,40 @@ ol > li::before {
 
 /* FORM =============== Starts ===============*/
 
-.form-container {
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--form-color-bg);
+
+  flex-direction: column;
+  font-family: inherit;
+  max-width: 500px;
+  padding: 4.5rem 0;
+  margin: auto;
+  text-align: left;
+  align-items: end;
 }
 
-.login-form {
+fieldset {
+  border-color: transparent;
+  color: var(--form-color-text-legend);
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+fieldset p {
+  color: var(--text-light-gray-accento-footer);
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--form-color-text-label);
+}
+
+/* DEPRECATED */
+/* .login-form {
   display: flex;
   flex-direction: column;
   font-family: inherit;
@@ -752,7 +792,7 @@ ol > li::before {
   margin: auto;
   text-align: left;
   align-items: end;
-}
+} */
 
 /* Estilo para el * */
 .form-atributo-necesario {
@@ -762,6 +802,7 @@ ol > li::before {
 /* Estilo para las etiquetas */
 label {
   width: 100%;
+  font-weight: 400;
   color: var(--form-color-text-label);
 }
 
@@ -770,6 +811,20 @@ input::placeholder {
   color: var(--form-color-text-placeholder);
   font-weight: 700;
   font-size: 1rem;
+}
+
+/* Estilo para el menu drp dwn */
+select {
+  color: var(--form-color-text-placeholder);
+  font-weight: 400;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--form-color-bottom-box);
+  transition: border-bottom 0.3s ease;
+  margin-bottom: 1rem;
 }
 
 /* Estilo para el input general */
@@ -789,18 +844,88 @@ input:focus {
   border-bottom: 2px solid var(--form-color-bottom-box-active);
 }
 
+/* Estado de enfoque del menu drp dwn*/
+select:focus {
+  outline: none;
+  border-bottom: 2px solid var(--form-color-bottom-box-active);
+}
+
 /* Estilo para cuando la forma es invalida */
 input:invalid:focus {
   outline: none;
   border-bottom: 2px solid var(--form-color-item-needed);
 }
 
+/* Contenedor para radios y checks */
+.form-container-check {
+  display: flex;
+  gap: 0.25rem;
+}
+
+/* Radio style */
+
+input[type="radio"] {
+  appearance: none; /* Elimina el estilo del navegador */
+  padding: initial;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--form-color-radius);
+  border-radius: 50%; /* Hace el círculo */
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+input[type="radio"]:checked {
+  background-color: var(--form-color-button-pswrd-txt-hover);
+}
+
+/* El estilo check box mas complicado del oeste */
+
+input[type="checkbox"] {
+  appearance: none; /* Elimina el estilo predeterminado */
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--captcha-color-border);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+input[type="checkbox"]::after {
+  content: "";
+  /* Contenido vacío por defecto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* Esto crea la palomita usando un border jejeje*/
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  /* Scale 0 para que no se vea */
+  transform: translate(-50%, -50%) rotate(0deg) scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Propiedad after para aplicar las transicion a la palomita */
+input[type="checkbox"]:checked::after {
+  transform: translate(-50%, -50%) rotate(45deg) scale(1);
+}
+
+/* Estilo al estar marcado */
+input[type="checkbox"]:checked {
+  background-color: #008000;
+  border-color: #006400;
+}
+
 /* Estilo del boton submit */
 .form-button-submit {
   color: var(--text-articles-main);
   background-color: var(--form-color-button-normal);
-  width: 50%;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 700;
   padding: 1rem 2rem;
   border: none;
@@ -838,7 +963,7 @@ input:invalid:focus {
   flex-direction: row;
   width: 80%;
   height: 4rem;
-  margin: 1rem 20%;
+  margin: 1rem 0;
   background-color: var(--captcha-color-bg);
   border: 1px solid var(--captcha-color-border);
 }
@@ -853,9 +978,14 @@ input:invalid:focus {
 
 /* El tamaño del checkbox, pero solamente dentro del captcha */
 .google-captcha input[type="checkbox"] {
-  transform: scale(2);
+  transform: scale(1);
   margin: 0;
 }
+
+/* DEPRECATED */
+/* .new-usr-parrafos{
+  color: var(--text-light-gray-accento-footer);
+} */
 
 /* Form =========================== Ends ===================== */
 
@@ -1054,7 +1184,7 @@ input:invalid:focus {
     height: auto;
   }
 
-  .auth-usr-container {
+  .main-aside-container {
     margin: 0;
     width: 100%;
   }

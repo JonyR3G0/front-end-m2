@@ -93,7 +93,9 @@
 
           <div class="user-auth-container">
             <a class="button-link-nofill" href="#">Ingresar</a>
-            <a class="button-link-fill" href="../register/register.html">Únete</a>
+            <a class="button-link-fill" href="../register/register.html"
+              >Únete</a
+            >
           </div>
         </div>
       </nav>
@@ -105,60 +107,73 @@
       </aside>
 
       <!-- Contenido main a la derecha -->
-      <article class="auth-usr-container">
-        <div class="form-container">
+      <article class="main-aside-container">
+        <div class="reutilizable-bg-gray">
           <form class="login-form">
-            <!-- Email -->
-            <label for="email" title="Ingresa tu email" aria-required="true"
-              ><span class="form-atributo-necesario">*</span> Ingresa tu
-              email</label
-            >
-            <input
-              id="email"
-              type="email"
-              placeholder="Ingresa tu email"
-              class="form-placeholder"
-              required
-            />
+            <!-- Información de acceso -->
+            <fieldset>
+              <!-- Email -->
+              <label for="email">
+                <span class="form-atributo-necesario">*</span> Correo
+                Electrónico
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Ingresa tu correo"
+                class="form-placeholder"
+                required
+              />
 
-            <!-- Password -->
-            <label
-              for="password"
-              title="Ingresa tu contraseña"
-              aria-required="true"
-              ><span class="form-atributo-necesario">*</span> Ingresa tu
-              contraseña</label
-            >
-            <input
-              id="password"
-              type="password"
-              placeholder="Ingresa tu contraseña"
-              required
-            />
-            <!-- BUTTONS ========================================== -->
+              <!-- Contraseña -->
+              <label for="password">
+                <span class="form-atributo-necesario">*</span> Contraseña
+              </label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Ingresa tu contraseña"
+                class="form-placeholder"
+                minlength="8"
+                required
+              />
+            </fieldset>
 
-            <!-- Olvide mi contraseña button -->
-            <button type="button" class="form-button-password-recuperation">
-              Olvidé mi contraseña
-            </button>
-            <div class="google-captcha">
-              <ul>
-                <li>
-                  <input type="checkbox" class="google-captcha-checkbox" />
-                </li>
-                <li><span>Soy un robot</span></li>
-                <img
-                  src="../assets/img/refakecaptcha.png"
-                  alt="fake-captcha-logo"
-                  width="50px"
-                  height="50px"
-                />
-              </ul>
+            <!-- Recuperación y seguridad -->
+            <fieldset>
+              <!-- Botón para recuperar contraseña -->
+
+              <button type="button" class="form-button-password-recuperation">
+                Olvidé mi contraseña
+              </button>
+
+              <!-- Google Captcha -->
+              <div class="google-captcha">
+                <ul>
+                  <li>
+                    <input type="checkbox" class="google-captcha-checkbox" />
+                  </li>
+                  <li><span>Soy un robot</span></li>
+                  <li>
+                    <img
+                      src="../assets/img/refakecaptcha.png"
+                      alt="Imagen del captcha"
+                      width="50px"
+                      height="50px"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+
+            <!-- Botón de envío -->
+            <div>
+              <button type="submit" class="form-button-submit">
+                Iniciar Sesión
+              </button>
             </div>
-            <!-- Button -->
-            <button type="submit" class="form-button-submit">
-              Iniciar Sesión
-            </button>
           </form>
         </div>
 
@@ -174,7 +189,9 @@
           </h3>
           <div class="info-unete-rewards-button-container">
             <div class="card-container-txt">
-              <a class="button-link-nofill button-link-color-green" href="#">¡Únete ahora!</a>
+              <a class="button-link-nofill button-link-color-green" href="#"
+                >¡Únete ahora!</a
+              >
             </div>
             <div class="image-container">
               <img

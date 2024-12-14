@@ -107,122 +107,96 @@
       </aside>
 
       <!-- Contenido main a la derecha -->
-      <article class="auth-usr-container">
-        <div class="form-container">
-          <form class="login-form">
-            <div class="reutilizable-txt-l reutilizable-txt-l reutilizable-flex-start-row">
-              <h4>Información personal</h4>
-              <h5>(*) campos obligatorios</h5>
-            </div>
-            <p class="reutilizable-rewards-paddings-b-05"> 
-              ¡Regístrate y comienza a vivir la experiencia Starbucks Rewards™!
-            </p>
-            <!-- Nombre -->
-            <label for="Nombre" title="Nombre" aria-required="true"
-              ><span class="form-atributo-necesario">*</span> Nombre(s)</label
-            >
-            <input
-              id="Nombre"
-              type="text"
-              placeholder="Nombre(s)*"
-              class="form-placeholder"
-              required
-            />
+      <article class="main-aside-container">
+        <div class="reutilizable-bg-gray">
+          <form>
+            <fieldset>
+              <legend>Información personal</legend>
 
-            <!-- Apellido paterno -->
-            <label for="Apellido" title="Apellido" aria-required="true"
-              ><span class="form-atributo-necesario">*</span> Apellido
-              paterno</label
-            >
-            <input
-              id="Apellido"
-              type="text"
-              placeholder="Apellido paterno*"
-              class="form-placeholder"
-              required
-            />
-
-            <!-- Email -->
-            <label for="email" title="Email" aria-required="true"
-              ><span class="form-atributo-necesario">*</span> Email</label
-            >
-            <input
-              id="email"
-              type="email"
-              placeholder="Email*"
-              class="form-placeholder"
-              required
-            />
-
-            <!-- Confirmar Email -->
-            <label
-              for="email-confirm"
-              title="Confirmar Email"
-              aria-required="true"
-            >
-              <span class="form-atributo-necesario">*</span> Confirmar
-              Email</label
-            >
-            <input
-              id="email-confirm"
-              type="email"
-              placeholder="Confirmar Email*"
-              class="form-placeholder"
-              required
-            />
-
-            <!-- Password -->
-            <label for="password" title="Contraseña*" aria-required="true"
-              ><span class="form-atributo-necesario">*</span> Contraseña</label
-            >
-            <input
-              id="password"
-              type="password"
-              placeholder="Contraseña*"
-              minlength="8"
-              required
-            />
-
-            <!-- Password confirm -->
-            <label
-              for="password-confirm"
-              title="Confirmar contraseña*"
-              aria-required="true"
-              ><span class="form-atributo-necesario">*</span> Confirmar
-              contraseña</label
-            >
-            <input
-              id="password-confirm"
-              type="password"
-              placeholder="Confirmar contraseña*"
-              minlength="8"
-              required
-            />
-            <!-- BUTTONS ========================================== -->
-
-            <!-- Olvide mi contraseña button -->
-            <button type="button" class="form-button-password-recuperation">
-              Olvidé mi contraseña
-            </button>
+              <p class="reutilizable-rewards-paddings-b-05">
+                ¡Regístrate y comienza a vivir la experiencia Starbucks Rewards™!
+              </p>
+          
+              <label for="nombre"><span class="form-atributo-necesario">*</span> Nombre(s)</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Nombre(s)*" class="form-placeholder" required />
+          
+              <label for="apellido"><span class="form-atributo-necesario">*</span> Apellido paterno</label>
+              <input id="apellido" name="apellido" type="text" placeholder="Apellido paterno*" class="form-placeholder" required />
+          
+              <label for="email"><span class="form-atributo-necesario">*</span> Email</label>
+              <input id="email" name="email" type="email" placeholder="Email*" class="form-placeholder" required />
+          
+              <label for="email-confirm"><span class="form-atributo-necesario">*</span> Confirmar Email</label>
+              <input id="email-confirm" name="email_confirm" type="email" placeholder="Confirmar Email*" class="form-placeholder" required />
+          
+              <label for="password"><span class="form-atributo-necesario">*</span> Contraseña</label>
+              <input id="password" name="password" type="password" placeholder="Contraseña*" minlength="8" required />
+          
+              <label for="password-confirm"><span class="form-atributo-necesario">*</span> Confirmar contraseña</label>
+              <input id="password-confirm" name="password_confirm" type="password" placeholder="Confirmar contraseña*" minlength="8" required />
+            </fieldset>
+          
+            <fieldset>
+              <p>Fecha de Nacimiento (opcional)</p>
+              <p class="reutilizable-rewards-paddings-b-05">
+                Agrega tu fecha de cumpleaños para otorgarte una bebida gratis en el mes de tu cumpleaños
+              </p>
+              <div class="rewards-menu-drp-dwn">
+                <label for="mes">Mes</label>
+                <select id="mes" name="mes">
+                  <option value="" disabled selected>Selecciona el mes</option>
+                  <option value="january">Enero</option>
+                  <!-- Opciones restantes -->
+                </select>
+          
+                <label for="dia">Día</label>
+                <select id="dia" name="dia">
+                  <option value="" disabled selected>Selecciona el día</option>
+                  <option value="1">1</option>
+                  <!-- Opciones restantes -->
+                </select>
+              </div>
+            </fieldset>
+          
+            <fieldset>
+              <legend>Ingresa a Starbucks Rewards</legend>
+              <p class="reutilizable-rewards-paddings-b-05">
+                Únete a Starbucks Rewards™ y disfruta de beneficios especiales.
+              </p>
+              <div class="form-container-check">
+                <input id="SBXC-nueva" type="radio" name="SBXC" value="nueva" />
+                <label for="SBXC-nueva">Quiero recibir una Starbucks Card digital instantánea</label>
+              </div>
+              <div class="form-container-check">
+                <input id="SBXC-propia" type="radio" name="SBXC" value="propia" />
+                <label for="SBXC-propia">Quiero unirme con una Starbucks Card que ya tengo</label>
+              </div>
+            </fieldset>
+          
+            <fieldset>
+              <legend>Términos y Condiciones</legend>
+              <div class="form-container-check">
+                <input id="promociones" type="checkbox" name="novedades" value="si" />
+                <label for="promociones">Deseo recibir novedades sobre productos y promociones</label>
+              </div>
+              <div class="form-container-check">
+                <input id="terminos" type="checkbox" name="terminos" value="aceptado" required />
+                <label for="terminos">
+                  Acepto los <a href="#">Términos y Condiciones</a> y <a href="#">Aviso de Privacidad</a>
+                </label>
+              </div>
+            </fieldset>
+          
             <div class="google-captcha">
               <ul>
-                <li>
-                  <input type="checkbox" class="google-captcha-checkbox" />
-                </li>
+                <li><input type="checkbox" class="google-captcha-checkbox" /></li>
                 <li><span>Soy un robot</span></li>
-                <img
-                  src="../assets/img/refakecaptcha.png"
-                  alt="fake-captcha-logo"
-                  width="50px"
-                  height="50px"
-                />
+                <li><img src="../assets/img/refakecaptcha.png" alt="Imagen del fake captcha" width="50px"></li>
               </ul>
             </div>
-            <!-- Button -->
-            <button type="submit" class="form-button-submit">
-              Iniciar Sesión
-            </button>
-          </form>
+          
+            <button type="submit" class="form-button-submit">Registrarme</button>
+          </form>         
         </div>
 
         <!-- Banner fondo negro -->
