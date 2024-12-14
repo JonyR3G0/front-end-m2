@@ -515,7 +515,7 @@ ol > li::before {
 .reutilizable-container-90ps {
   max-width: 90%;
   margin: auto;
-}
+}z
 
 .reutilizable-container-80ps {
   max-width: 80%;
@@ -721,6 +721,7 @@ ol > li::before {
   right: 0;
   max-width: 40%;
   object-fit: contain;
+  z-index: -50;
 }
 
 .card-aside-fixed h1 {
@@ -758,7 +759,7 @@ form {
 
   flex-direction: column;
   font-family: inherit;
-  max-width: 500px;
+  max-width: 450px;
   padding: 4.5rem 0;
   margin: auto;
   text-align: left;
@@ -867,8 +868,8 @@ input:invalid:focus {
 input[type="radio"] {
   appearance: none; /* Elimina el estilo del navegador */
   padding: initial;
-  width: 1rem;
-  height: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
   border: 2px solid var(--form-color-radius);
   border-radius: 50%; /* Hace el círculo */
   outline: none;
@@ -885,13 +886,14 @@ input[type="radio"]:checked {
 
 input[type="checkbox"] {
   appearance: none; /* Elimina el estilo predeterminado */
-  width: 1rem;
-  height: 1rem;
-  border: 2px solid var(--captcha-color-border);
-  border-radius: 2px;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid var(--form-color-radius);
+  border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
+  padding: 0%;
 }
 
 input[type="checkbox"]::after {
@@ -1195,6 +1197,7 @@ input[type="checkbox"]:checked {
 
   .info-unete-rewards {
     margin: 2rem;
+    flex-direction: column;
   }
 
   .info-unete-rewards-button-container {
@@ -1216,6 +1219,14 @@ input[type="checkbox"]:checked {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: auto;
+  }
+
+  form{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .card-aside-fixed h1{
     margin: auto;
   }
 }
