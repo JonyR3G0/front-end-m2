@@ -17,8 +17,8 @@
     <meta property="og:image:width" content="220" />
     <meta property="og:image:height" content="220" />
     <meta property="og:site_name" content="Starbucks - Starbucks." />
-    <meta property="og:title" content="Inicia sesión" />
-    <meta property="og:description" content="Inicia sesión" />
+    <meta property="og:title" content="Registro - nuevo usuario" />
+    <meta property="og:description" content="Registro - nuevo usuario" />
     <meta property="og:type" content="website" />
     <!-- Fin de las etiquetas metas originales -->
 
@@ -28,7 +28,7 @@
     <meta name="author" content="Jonathan Reyes" />
     <meta
       name="description"
-      content="Un proyecto de practica para clona el sitio de starbucks. !!! NO SOY DUEÑO INTELECTUAL DE LA MARCA U PRODUCTOS EN ESTA PAGINA !!! solamente del codigo."
+      content="Un proyecto de practica para clonar el sitio de starbucks. !!! NO SOY DUEÑO INTELECTUAL DE LA MARCA U PRODUCTOS EN ESTA PAGINA !!! solamente del código."
     />
     <meta name="keywords" content="starbucks, practica, proyecto, dev.f" />
     <!-- SEO -->
@@ -49,7 +49,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../style_star_bonks.css" />
 
-    <title>Inicia Sesión | Starbonks</title>
+    <title>Registro | Starbonks</title>
   </head>
   <body>
     <header class="header-sticky">
@@ -92,8 +92,10 @@
           </div>
 
           <div class="user-auth-container">
-            <a class="button-link-nofill" href="#">Ingresar</a>
-            <a class="button-link-fill" href="../register/register.html">Únete</a>
+            <a class="button-link-nofill" href="../login/login.html"
+              >Ingresar</a
+            >
+            <a class="button-link-fill" href="#">Únete</a>
           </div>
         </div>
       </nav>
@@ -101,38 +103,99 @@
     <main class="main-aside">
       <!-- Cartel fixed en la izq -->
       <aside class="card-aside-fixed">
-        <h1>Ingresa a tu cuenta 🌟</h1>
+        <h1>Registro</h1>
       </aside>
 
       <!-- Contenido main a la derecha -->
       <article class="auth-usr-container">
         <div class="form-container">
           <form class="login-form">
+            <div class="reutilizable-txt-l reutilizable-txt-l reutilizable-flex-start-row">
+              <h4>Información personal</h4>
+              <h5>(*) campos obligatorios</h5>
+            </div>
+            <p class="reutilizable-rewards-paddings-b-05"> 
+              ¡Regístrate y comienza a vivir la experiencia Starbucks Rewards™!
+            </p>
+            <!-- Nombre -->
+            <label for="Nombre" title="Nombre" aria-required="true"
+              ><span class="form-atributo-necesario">*</span> Nombre(s)</label
+            >
+            <input
+              id="Nombre"
+              type="text"
+              placeholder="Nombre(s)*"
+              class="form-placeholder"
+              required
+            />
+
+            <!-- Apellido paterno -->
+            <label for="Apellido" title="Apellido" aria-required="true"
+              ><span class="form-atributo-necesario">*</span> Apellido
+              paterno</label
+            >
+            <input
+              id="Apellido"
+              type="text"
+              placeholder="Apellido paterno*"
+              class="form-placeholder"
+              required
+            />
+
             <!-- Email -->
-            <label for="email" title="Ingresa tu email" aria-required="true"
-              ><span class="form-atributo-necesario">*</span> Ingresa tu
-              email</label
+            <label for="email" title="Email" aria-required="true"
+              ><span class="form-atributo-necesario">*</span> Email</label
             >
             <input
               id="email"
               type="email"
-              placeholder="Ingresa tu email"
+              placeholder="Email*"
+              class="form-placeholder"
+              required
+            />
+
+            <!-- Confirmar Email -->
+            <label
+              for="email-confirm"
+              title="Confirmar Email"
+              aria-required="true"
+            >
+              <span class="form-atributo-necesario">*</span> Confirmar
+              Email</label
+            >
+            <input
+              id="email-confirm"
+              type="email"
+              placeholder="Confirmar Email*"
               class="form-placeholder"
               required
             />
 
             <!-- Password -->
-            <label
-              for="password"
-              title="Ingresa tu contraseña"
-              aria-required="true"
-              ><span class="form-atributo-necesario">*</span> Ingresa tu
-              contraseña</label
+            <label for="password" title="Contraseña*" aria-required="true"
+              ><span class="form-atributo-necesario">*</span> Contraseña</label
             >
             <input
               id="password"
               type="password"
-              placeholder="Ingresa tu contraseña"
+              placeholder="Contraseña*"
+              minlength="8"
+              required
+            />
+
+            <!-- Password confirm -->
+            <label
+              for="password-confirm"
+              title="Confirmar contraseña*"
+              aria-required="true"
+              ><span class="form-atributo-necesario">*</span> Confirmar
+              contraseña</label
+            >
+            <input
+              id="password-confirm"
+              type="password"
+              placeholder="Confirmar contraseña*"
+              minlength="8"
               required
             />
             <!-- BUTTONS ========================================== -->
@@ -162,27 +225,9 @@
           </form>
         </div>
 
+        <!-- Banner fondo negro -->
         <section class="login-promo-banner">
           <h2>¡SER PARTE DE STARBUCKS REWARDS™ ES MUY FÁCIL!</h2>
-        </section>
-
-        <section class="info-unete-rewards">
-          <h2>Únete a Starbucks Rewards</h2>
-          <h3>
-            Descarga la aplicación, registrate, obtén estrellas, disfruta de
-            café gratis y algo más.
-          </h3>
-          <div class="info-unete-rewards-button-container">
-            <div class="card-container-txt">
-              <a class="button-link-nofill button-link-color-green" href="#">¡Únete ahora!</a>
-            </div>
-            <div class="image-container">
-              <img
-                src="../assets/img/chica-sbx.png"
-                alt="Unete a rewards. es muy facil!"
-              />
-            </div>
-          </div>
         </section>
 
         <footer class="pre-footer">
