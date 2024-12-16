@@ -1140,6 +1140,34 @@ input[type="checkbox"]:checked {
 
 /* Pre Footer & Footer ================> Ends <==================================== */
 
+/* MENU STYLES ===================> Starts <==================================== */
+
+.menu-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.categoria-grid{
+  width: 15rem;
+  height: 15rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: .75rem;
+}
+
+.categoria-grid img{
+  border-radius: 50%;
+  background-color: var(--background-categoria);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.categoria-grid img:hover{
+background-color: var(--background-categoria-hover);
+}
+
 /* Este detallito solo está en el estilo de la page de rewards, pero me gustó asi que lo voy a dejar para todos ya que ando de unificador de estilos */
 
 ::selection {

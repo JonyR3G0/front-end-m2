@@ -17,8 +17,8 @@
     <meta property="og:image:width" content="220" />
     <meta property="og:image:height" content="220" />
     <meta property="og:site_name" content="Starbucks - Starbucks." />
-    <meta property="og:title" content="Homepage" />
-    <meta property="og:description" content="Homepage" />
+    <meta property="og:title" content="Registro - nuevo usuario" />
+    <meta property="og:description" content="Registro - nuevo usuario" />
     <meta property="og:type" content="website" />
     <!-- Fin de las etiquetas metas originales -->
 
@@ -28,7 +28,7 @@
     <meta name="author" content="Jonathan Reyes" />
     <meta
       name="description"
-      content="Un proyecto de practica para clona el sitio de starbucks. !!! NO SOY DUEÑO INTELECTUAL DE LA MARCA U PRODUCTOS EN ESTA PAGINA !!! solamente del codigo."
+      content="Un proyecto de practica para clonar el sitio de starbucks. !!! NO SOY DUEÑO INTELECTUAL DE LA MARCA U PRODUCTOS EN ESTA PAGINA !!! solamente del código."
     />
     <meta name="keywords" content="starbucks, practica, proyecto, dev.f" />
     <!-- SEO -->
@@ -47,9 +47,9 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style_star_bonks.css" />
+    <link rel="stylesheet" href="../style_star_bonks.css" />
 
-    <title>Homepage | Starbonks</title>
+    <title>Registro | Starbonks</title>
   </head>
   <body>
     <header>
@@ -61,7 +61,9 @@
           <div>
             <ul class="logo-container">
               <li class="logo">
-                <a href="#" aria-label="Logo starbuks - ir a la pagina pricipal"
+                <a
+                  href="../starbucks_home_page.html"
+                  aria-label="Logo starbuks - ir a la pagina pricipal"
                   ><img
                     src="https://www.starbucks.com.mx/static/images/logo.svg"
                     alt="logo starbucks"
@@ -73,8 +75,8 @@
           </div>
           <div>
             <ul class="main-menu">
-              <li><a href="./menu/grid.html">MENU</a></li>
-              <li><a href="./rewards/rewards.html">REWARDS</a></li>
+              <li><a href="#">MENU</a></li>
+              <li><a href="../rewards/rewards.html">REWARDS</a></li>
             </ul>
           </div>
         </div>
@@ -83,145 +85,72 @@
           aria-labelledby="Barra de navegación principal"
         >
           <div>
-            <a class="encuentra-tienda" href="./location-stores/location-stores.html"
+            <a
+              class="encuentra-tienda"
+              href="../location-stores/location-stores.html"
               ><span class="material-symbols-outlined"> distance </span>
               Localizar Tienda</a
             >
           </div>
 
           <div class="user-auth-container">
-            <a class="button-link-nofill" href="./login/login.html">Ingresar</a>
-            <a class="button-link-fill" href="./register/register.html">Únete</a>
+            <a class="button-link-nofill" href="../login/login.html"
+              >Ingresar</a
+            >
+            <a class="button-link-fill" href="../register/register.html">Únete</a>
           </div>
         </div>
       </nav>
     </header>
 
     <main>
-      <div class="cards">
-        <section class="card-green card-container">
-          <div class="image-container">
-            <img
-              alt="STARBUCKS LATTE POR TI"
-              src="./assets/img/green-card-main.png"
-            />
-          </div>
-          <div class="card-container-txt">
-            <h2>STARBUCKS LATTE POR TI</h2>
-            <p>
-              Por nuestro amor al café, a nuestros partners y a nuestros
-              clientes.
-            </p>
-            <p>¡Estamos felices de verte todos los días!</p>
-          </div>
-        </section>
+      <h3>¡Disfrútalos!</h3>
+      <h1 class="logo">Conoce nuestras bebidas y alimentos de temporada</h1>
+      <h2>Bebidas</h2>
+      <section class="menu-grid" id="menu">
+        <div class="categoria-grid" data-seccion="bebidas-calientes">
+          <img src="https://picsum.photos/180" alt="lorem-picsum" />
+          <h2>Bebidas calientes</h2>
+        </div>
+        <div class="categoria-grid" data-seccion="frapuccino">
+          <img src="https://picsum.photos/180" alt="lorem-picsum" />
+          <h2>Frappuccino</h2>
+        </div>
+        <div class="categoria-grid" data-seccion="bebidas-frias">
+          <img src="https://picsum.photos/180" alt="lorem-picsum" />
+          <h2>Bebidas Frías</h2>
+        </div>
+        <div class="categoria-grid" data-seccion="bebidas-base-te">
+          <img src="https://picsum.photos/180" alt="lorem-picsum" />
+          <h2>Bebidas Base Té</h2>
+        </div>
+        <div class="categoria-grid" data-seccion="cold-brew">
+          <img src="https://picsum.photos/180" alt="lorem-picsum" />
+          <h2>Cold Brew</h2>
+        </div>
+      </section>
 
-        <section class="card-blue card-container card-izq">
-          <div class="card-container-txt">
-            <h2>CELEBREMOS CON LOS FAVORITOS DE LA TEMPORADA</h2>
-            <p>
-              ¡Disfruta esta temporada con el regreso de Cranberry Mocha Blanco
-              acompañados de Toffee Nut latte, Red Velvet Latte, Hazelnut
-              Caramel latte y Holiday Cinnamon!
-            </p>
-          </div>
-          <div class="image-container">
-            <img
-              alt="STARBUCKS LATTE POR TI"
-              src="./assets/img/blue-card-frappe.png"
-            />
-          </div>
-        </section>
+      <h2>Alimentos</h2>
+      <section class="menu-grid" id="menu">
+        <div class="categoria-grid" data-seccion="alimentos">
+          <h2>Alimentos</h2>
+          <p>Explora las bebidas calientes</p>
+        </div>
+      </section>
 
-        <section class="card-cherry card-container">
-          <div class="image-container">
-            <img
-              alt="STARBUCKS LATTE POR TI"
-              src="./assets/img/cherry-card-navidad.png"
-            />
-          </div>
-          <div class="card-container-txt">
-            <h2>EL CAFÉ PERFECTO PARA ESTA TEMPORADA</h2>
-            <p>
-              Una taza de café preparada con Christmas Blend es la excusa
-              perfecta para disfrutar con tus seres queridos.
-            </p>
-            <p>#StarbucksLatte</p>
-          </div>
-        </section>
+      <h2>Cafe en grano</h2>
+      <section class="menu" id="menu">
+        <div class="categoria-grid" data-seccion="cafeengrano">
+          <h2>Cafes en grano</h2>
+          <p>Explora los cafes</p>
+        </div>
+      </section>
 
-        <section class="card-green card-container card-izq">
-          <div class="card-container-txt">
-            <h2>RECOMPENSAS EN TU BEBIDA FAVORITA</h2>
-            <p>
-              Sé parte de Starbucks Rewards y obtén más café gratis, promociones
-              exclusivas, accesos a productos antes que nadie y más.
-            </p>
-          </div>
-          <div class="image-container">
-            <img
-              alt="STARBUCKS LATTE POR TI"
-              src="./assets/img/green-card-rewards.png"
-              height="263"
-            />
-          </div>
-        </section>
-
-        <section class="card-cherry card-container">
-          <div class="image-container">
-            <img
-              alt="STARBUCKS LATTE POR TI"
-              src="./assets/img/cherry-card-termos.png"
-              height="263"
-            />
-          </div>
-          <div class="card-container-txt">
-            <h2>TODO Y TODOS POR EL PLANETA</h2>
-            <p>
-              Trae tu vaso o termo favorito y obtén $8 de descuento en tu bebida
-            </p>
-            <a class="button-link-nofill button-link-color-white" href="#">Conoce más</a>
-          </div>
-        </section>
-
-        <section class="grid-banner">
-          <div class="cube-banner card-cherry-light">
-            <img
-              alt="STARBUCKS LATTE POR TI"
-              src="./assets/img/mini-card-noticias.png"
-              height="263"
-            />
-            <div class="cube-banner-text-container">
-              <p>
-                Consulta los eventos más <br />
-                recientes.
-              </p>
-              <a class="button-link-nofill button-link-color-cherry" href="#"
-                >Aquí</a
-              >
-            </div>
-          </div>
-
-          <div class="cube-banner card-blue-light">
-            <img
-              alt="STARBUCKS LATTE POR TI"
-              src="./assets/img/mini-card-promociones.png"
-              height="263"
-            />
-            <div class="cube-banner-text-container">
-              <p>
-                Términos y <br />
-                condiciones.
-              </p>
-              <a class="button-link-nofill button-link-color-blue" href="#"
-                >Ver más</a
-              >
-            </div>
-          </div>
-        </section>
-      </div>
+      <section class="contenido" id="contenido">
+        <h2>Bienvenido</h2>
+        <p>selecciona una categoria para explorar los productos</p>
+      </section>
     </main>
-
     <footer class="pre-footer">
       <div class="pre-footer-container">
         <div>
@@ -251,7 +180,7 @@
             target="_blank"
             rel="noreferrer"
             ><img
-              src="./assets/ico/facebook.png"
+              src="../assets/ico/facebook.png"
               alt="Facebook de starbucks oficial"
           /></a>
         </li>
@@ -262,7 +191,7 @@
             target="_blank"
             rel="noreferrer"
             ><img
-              src="./assets/ico/instagram.png"
+              src="../assets/ico/instagram.png"
               alt="Instagram de starbucks oficial"
           /></a>
         </li>
@@ -272,7 +201,7 @@
             href="https://twitter.com/StarbucksMex"
             target="_blank"
             rel="noreferrer"
-            ><img src="./assets/ico/x.png" alt="X de starbucks oficial"
+            ><img src="../assets/ico/x.png" alt="X de starbucks oficial"
           /></a>
         </li>
         <li>
@@ -282,7 +211,7 @@
             target="_blank"
             rel="noreferrer"
             ><img
-              src="./assets/ico/youtube.png"
+              src="../assets/ico/youtube.png"
               alt="youtube de starbucks oficial"
           /></a>
         </li>
@@ -333,5 +262,6 @@
         >mx | prod | graciasporvercreadoporJonathanReyes | 12/12/2024</span
       >
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
